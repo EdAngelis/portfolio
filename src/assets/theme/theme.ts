@@ -13,15 +13,15 @@ const themes = {
         error: '#ffffff'
     },
     bra: {
-        primary: '#00ff62',
+        primary: '#04BF00',
         secondary: '#ffffff',
-        accent: '#000000',
+        darkGray: '#0F0F0F',
         error: '#ffffff'
     },
     eua: {
-        primary: '#ff0000',
+        primary: '#BD0000',
         secondary: '#ffffff',
-        accent: '#000000',
+        darkGray: '#0F0F0F',
         error: '#ffffff'
     } 
     };

@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
 .header {
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 5px 10px #1e032b;
+    box-shadow: 0px -5px 10px #ffffff;
     align-items: center;
 }
 
@@ -24,24 +24,24 @@ export const HeaderContainer = styled.div`
 }
 .a {
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    color: #0D7CFF;
+    font-family: var(--font-neutral);
+    color: #ffffff;
     padding: 0 4px 10px 10px;
-    border-bottom: 2px solid #0D7CFF;
-    border-left: 2px solid #0D7CFF;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
 }
 
 .a:hover {
-    color: #8E00D1;
-    border-bottom: 2px solid #8E00D1;
-    border-left: 2px solid #8E00D1;
+    color: ${(props)=> theme[props.theme].primary};
+    border-bottom: 2px solid ${(props)=> theme[props.theme].primary};
+    border-left: 2px solid ${(props)=> theme[props.theme].primary};
 }
 
 .h1 {
     font-size: 2em;
     padding-left: 20px;
     color: ${(props)=> theme[props.theme].primary};
-    font-family: 'Indie Flower', cursive;
+    font-family: var( --font-display);
     text-align: center
 }
 
@@ -67,7 +67,7 @@ export const HeaderContainer = styled.div`
     }
     .a:hover {
         border: none;
-        border-bottom: 2px solid #8E00D1;
+        border-bottom: 2px solid ${(props)=> theme[props.theme].primary};
     }
 }
 

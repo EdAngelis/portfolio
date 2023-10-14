@@ -15,7 +15,7 @@ img {
 
 .personal-data {
     flex-grow: 1;
-    color: #0D7CFF;
+    color: ${(props)=> theme[props.theme].primary};
     display: flex;
     flex-direction: column;
     align-items: center ;
@@ -29,7 +29,7 @@ img {
     font-size: 1.5em;
     margin: 0 0 10px 0;
     padding: 0;
-    font-family: 'Irish Grover', cursive;
+    font-family: var( --font-title);
 }
 
 .links {
@@ -40,8 +40,10 @@ img {
 
 .links a {
     text-decoration: none;
-    color: #0D7CFF;
-    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #0a66c2;
+    border-radius: 5px;
+    font-family: var( --font-neutral);
     padding: 10px 20px;
     font-size: 1.2em;
     border: 2px solid #0D7CFF;
@@ -54,15 +56,15 @@ img {
 
 .links a + a {
     text-decoration: none;
-    color: #8E00D1;
-    font-family: 'Inter', sans-serif;
+    color: #000000;
+    font-family: var( --font-neutral);
     padding: 10px 20px;
     font-size: 1.2em;
-    border: 2px solid #8E00D1;
+    border: 2px solid #000000;
 }
 
 .links a + a:hover {
-    background-color: #8E00D1;
+    background-color: ${(props)=> theme[props.theme].primary};
     color: #fff;
 }
 
@@ -97,7 +99,7 @@ img {
 }
 
 .flutter-bar {
-    background-color: #8E00D1;
+    background-color: ${(props)=> theme[props.theme].primary};
     grid-area: flutter-bar;
 }
 
@@ -110,7 +112,7 @@ img {
 }
 
 .angular-bar {
-    background-color: #8E00D1;
+    background-color: ${(props)=> theme[props.theme].primary};
     grid-area: angular-bar;
 }
 
@@ -157,50 +159,50 @@ img {
 
 
 .javascript-bar{
-    background: #8E00D1;
+    background: ${(props)=> theme[props.theme].primary};
     grid-area: javascript-bar;
 }
 .typescript-bar{
-    background: #8E00D1;
+    background: ${(props)=> theme[props.theme].primary};
     grid-area: typescript-bar;
 }
 .node-bar{
-    background: #8E00D1;
+    background: ${(props)=> theme[props.theme].primary};
     grid-area: node-bar;
 }
 .react-bar{
-    background: #8E00D1;
+    background: ${(props)=> theme[props.theme].primary};
     grid-area: react-bar;
 }
 .vue-bar{
-    background: #8E00D1;
+    background: ${(props)=> theme[props.theme].primary};
     grid-area: vue-bar;
 }
 .angular{
     grid-area: angular;
 }
 .mongoDb-bar{
-    background: #8E00D1;
+    background: ${(props)=> theme[props.theme].primary};
     grid-area: mongoDb-bar;
 }
 .mySql-bar{
-    background: #8E00D1;
+    background: ${(props)=> theme[props.theme].primary};
     grid-area: mySql-bar;
 }
 .aws-bar{
-    background: #8E00D1;
+    background: ${(props)=> theme[props.theme].primary};
     grid-area: aws-bar;
 }
 .docker-bar{
     grid-area: docker-bar;
-    background: #8E00D1;
+    background: ${(props)=> theme[props.theme].primary};
 }
 .git-bar{
-    background: #8E00D1;
+    background: ${(props)=> theme[props.theme].primary};
     grid-area: git-bar;
 }
 .github-bar{
-    background: #8E00D1;
+    background: ${(props)=> theme[props.theme].primary};
     grid-area: github-bar;
 }
 `;

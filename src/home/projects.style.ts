@@ -1,31 +1,37 @@
 import styles from 'styled-components';
-import themes from '../assets/theme/theme';
+import theme from '../assets/theme/theme';
 
 export const ProjectsContainer = styles.div`
+
 .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 .projects {
-    font-family: 'Irish Grover', cursive;
+    font-family: var( --font-title);
     color: #ffffff;
     
 }
 
 .projects a {
     align-self: flex-start;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 0;
     line-height: 2em;
     color: #0D7CFF;
 }
 
 .projects a:hover {
-    color: #8E00D1;
+    color: ${(props)=> theme[props.theme].primary};
 }
 
 .projects a + a {
-    margin-top: 30px;
-}`;
+    margin-top: 0px;
+}
+
+`;

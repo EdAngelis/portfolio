@@ -10,7 +10,7 @@ import "../../i18n";
 
 export default function Header() {
   const { i18n, t } = useTranslation();
-  const [flag, setFlag] = useState("bra");
+  const [flag, setFlag] = useState("eua");
   const { theme, setTheme } = useContext(appContext);
 
   const toggleFlag = () => {
@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <HeaderContainer theme={theme}>
       <header className="header">
-        <h1 className="h1">Ed Angelis R Ribeiro.</h1>
+        <h1 className="h1">Ed Angelis.</h1>
         <div className={`language ${flag}`} onClick={() => toggleFlag()}>
           <Image
             className="image"
@@ -51,7 +51,7 @@ export default function Header() {
             </li>
             <li className="li">
               <a className="a" href="#certifications">
-                {t("CERTIFICATIONS")}
+                {t("CERTIFICATES")}
               </a>
             </li>
             <li className="li">

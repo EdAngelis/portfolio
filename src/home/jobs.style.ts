@@ -6,22 +6,25 @@ export const JobsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     line-height: 1.5em;
+    background-color: ${(props)=> theme[props.theme].darkGray};
+    padding: 80px 0;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 
 }
 
 .jobs-section {
-    margin: 0 0 100px 0;
+    margin: 0;
 }
 
 .jobs-section h1 {
     text-align: center;
-    padding-bottom: 20px;
-    font-family: 'Irish Grover', cursive;
+    font-family: var( --font-title);
     color: #ffffff;
+    margin-top: 0px;
+    font-size: 2em;
 
 }
-
-
 
 .job1{
     display: flex;
@@ -43,11 +46,11 @@ export const JobsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     font-weight: bold;
-    color: #8E00D1;
+    color: ${(props)=> theme[props.theme].primary};
 }
 
 .job2-date {
-    border-bottom: 10px solid #8E00D1;
+    border-bottom: 10px solid ${(props)=> theme[props.theme].primary};
     width: 100%;
 }
 

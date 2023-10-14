@@ -1,7 +1,12 @@
 import styled from 'styled-components';
-import themes from '@/assets/theme/theme';
+import theme from '@/assets/theme/theme';
 
 export const CertsContainer = styled.div`
+background-color: ${(props)=> theme[props.theme].darkGray};
+padding: 70px 50px;
+h1 {
+    color: #ffffff;
+}
 .certifications{
     display: flex;
     flex-wrap: wrap;
@@ -9,13 +14,10 @@ export const CertsContainer = styled.div`
     justify-content: center;
 }
 
-.certifications img {
-    max-width: 200px;
-    flex-grow: 1;
+.img {
     transition: transform 0.2s;
-
 }
 
-.certifications img:hover {
+.img:hover {
     transform: scale(1.5);
 }`;
