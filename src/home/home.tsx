@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 import { HomeContainer } from "./home.style";
 import { JobsContainer } from "./jobs.style";
 import { CertsContainer } from "./certs.style";
+import { ProjectsContainer } from "./projects.style";
+import { FooterContainer } from "./footer.style";
 import "../i18n";
 
 export default function Home() {
@@ -82,8 +84,8 @@ export default function Home() {
                 alt="Ed Angelis"
               />
             </div>
-            <h2>FullStack Developer</h2>
-            <a>Bachelor`s Degree in Information Systems</a>
+            <h2>{t("FULLSTACK")}</h2>
+            <a>{t("DEGREE")}</a>
             <div className="links">
               <a href="https://www.linkedin.com/in/ed-angelis-ribeiro-2797b57a/">
                 LINKEDIN
@@ -103,20 +105,24 @@ export default function Home() {
       </HomeContainer>
       <JobsContainer>
         <section className="jobs-section" id="jobs-section">
-          <h1>Jobs Experiences</h1>
+          <h1>{t("EXPERIENCES")}</h1>
           <div className="experiences">
             <div className="job1">
-              <span className="job1-date">08/2021 - Marketing Business</span>
+              <span className="job1-date">{`08/2021 - ${t(
+                "MARKETING-BUSINESS"
+              )}`}</span>
               <span className="job1-company">Blanko</span>
-              <span className="job1-role">FullStack Developer</span>
+              <span className="job1-role">{t("FULLSTACK")}</span>
               <span className="job1-technologies">
                 node - MySql - NextJs - javascript
               </span>
             </div>
             <div className="job2">
-              <span className="job2-date">07/2022 - Iot Platform</span>
+              <span className="job2-date">{`07/2022 - ${t(
+                "IOT-PLATFORM"
+              )}`}</span>
               <span className="job2-company">Manusis4</span>
-              <span className="job2-role">FullStack Developer</span>
+              <span className="job2-role">{t("FULLSTACK")}</span>
               <span className="job2-technologies">
                 node - mongoDb - React/Angular - javascript/Typescript
               </span>
@@ -191,6 +197,35 @@ export default function Home() {
           />
         </section>
       </CertsContainer>
+
+      <ProjectsContainer>
+        <section className="projects" id="projects">
+          <h1>{t("PROJECTS")}</h1>
+          <a href="https://play.google.com/store/apps/details?id=com.rfgames.PlayLinguageVocabulary&pli=1">
+            Unity Game - Play Language - Apps on Google Play
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.deasolucoes.orange_painel">
+            Flutter app - FoodTech - Apps on Google Play
+          </a>
+          <a href="https://my-home-front.vercel.app/">
+            Web App - Envio de lista de compra
+          </a>
+        </section>
+      </ProjectsContainer>
+      <FooterContainer>
+        <footer id="footer">
+          <h2>{t("CONTACT")}</h2>
+          <div>
+            <a href="mailto:ed4ngelis@hotmail.com">ed4ngelis@hotmail.com</a>
+            <div>
+              <Image src={"/brasil.png"} alt="" width={30} height={30} />
+              <a href="tel:+5582996173595" className="tel">
+                +55 82996173595
+              </a>
+            </div>
+          </div>
+        </footer>
+      </FooterContainer>
     </>
   );
 }

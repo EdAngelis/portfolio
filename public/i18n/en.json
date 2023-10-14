@@ -1,9 +1,10 @@
 {
-    "TITLE": "Software Engineer",
-    "MENU": {
-        "EXPERIENCES": "Experiences",
-        "CERTIFICATIONS": "Certifications",
-        "PROJECTS": "Projects",
-        "CONTACT": "Contact"
-    }
+    "EXPERIENCES": "Experiences",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact",
+    "CERTIFICATIONS": "Certifications",
+    "FULLSTACK": "Full Stack Developer",
+    "DEGREE": "Bachelor`s Degree in Information Systems",
+    "MARKETING-BUSINESS": "Marketing Business",
+    "IOT-PLATFORM": "IoT Platform"
 }

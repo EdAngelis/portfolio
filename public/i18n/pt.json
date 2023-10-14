@@ -1,9 +1,10 @@
 {
-    "TITLE": "Desenvolvedor Web",
-    "MENU": {
-        "EXPERIENCES": "Experiências",
-        "CERTIFICATIONS": "Certificações",
-        "PROJECTS": "Projetos",
-        "CONTACT": "Contacto"
-    }
+    "EXPERIENCES": "Experiencia",
+    "PROJECTS": "Projetos",
+    "CONTACT": "Contato",
+    "CERTIFICATIONS": "Certificações",	
+    "FULLSTACK": "Desenvolvedor Full Stack",
+    "DEGREE": "Bacharel Sistema da Informação",
+    "MARKETING-BUSINESS": "Marketing e Negócios",
+    "IOT-PLATFORM": "IoT Plataforma"
 }
