@@ -1,9 +1,15 @@
+import { AppProvider } from "../context";
 import Home from "../home/home";
+import Header from "../components/header/header";
+import styles from "./page.module.css";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Home />
-    </main>
+    <AppProvider>
+      <main className={styles.container}>
+        <Header />
+        <Home />
+      </main>
+    </AppProvider>
   );
 }

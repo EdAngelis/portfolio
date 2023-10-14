@@ -1,3 +1,9 @@
 {
-    "title": "Bem vido ao React e React-i18next"
+    "TITLE": "Desenvolvedor Web",
+    "MENU": {
+        "EXPERIENCES": "Experiências",
+        "CERTIFICATIONS": "Certificações",
+        "PROJECTS": "Projetos",
+        "CONTACT": "Contacto"
+    }
 }

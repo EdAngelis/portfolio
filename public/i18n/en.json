@@ -1,3 +1,9 @@
 {
-    "title": "Welcome to React and React-i18next"
+    "TITLE": "Software Engineer",
+    "MENU": {
+        "EXPERIENCES": "Experiences",
+        "CERTIFICATIONS": "Certifications",
+        "PROJECTS": "Projects",
+        "CONTACT": "Contact"
+    }
 }
