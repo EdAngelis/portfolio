@@ -26,7 +26,7 @@ img {
 }
 
 .personal-data h2 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin: 0 0 10px 0;
     padding: 0;
     font-family: var( --font-title);
@@ -36,6 +36,10 @@ img {
     display: flex;
     gap: 20px;
     margin: 30px 0 50px 0;
+}
+
+.personal-data a {
+    font-size: 1.5em;
 }
 
 .links a {
@@ -74,11 +78,11 @@ img {
     max-width: 15em;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "flutter-bar flutter flutter flutter flutter flutter flutter"
-    "vue-bar vue vue vue vue vue vue"
     "angular-bar angular angular angular angular angular angular"
-    "react-bar react-bar react react react react react"
-    "typescript-bar typescript-bar typescript-bar typescript typescript typescript typescript"
+    "flutter-bar flutter-bar flutter flutter flutter flutter flutter"
+    "vue-bar vue-bar vue vue vue vue vue"
+    "react-bar react-bar react-bar react-bar react react react"
+    "typescript-bar typescript-bar typescript-bar typescript-bar typescript typescript typescript"
     "node-bar node-bar node-bar node-bar node-bar node node"
     "javascript-bar javascript-bar javascript-bar javascript-bar javascript-bar javascript javascript"
     "mongoDb-bar mongoDb-bar mongoDb-bar mongoDb-bar mongoDb-bar mongoDb mongoDb"
