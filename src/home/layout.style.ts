@@ -1,39 +1,30 @@
-import styled from 'styled-components';
-import { keyframes } from "styled-components";
+import { HTMLAttributes } from 'react';
+import styled, { keyframes } from 'styled-components';
 
-import theme from '../assets/theme/theme';
+interface LayoutContainerProps extends HTMLAttributes<HTMLDivElement> {
+    active?: boolean;
+}
 
 const activeAnim = keyframes`
-0% {
-            transform: translateX(-70px);
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-}`;
+    0% {
+        transform: translateX(-70px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+`;
 
-export const LayoutContainer = styled.div`
+export const LayoutContainer = styled.div<LayoutContainerProps>`
     .container {
         display: grid;
         grid-template-columns: 1fr;
         max-width: 960px;
         margin: 0 auto;
         gap: 120px;
-        animation-name: ${props => ( props.animate ? activeAnim : null )};
         animation-duration: 1s;
         animation-iteration-count: 1;
+        animation-name: ${(props) => (props.active ? activeAnim : null)};
     }
-
-    @keyframes themeTransition {
-        0% {
-            transform: translateX(-70px);
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
 `;

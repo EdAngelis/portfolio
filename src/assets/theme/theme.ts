@@ -1,5 +1,5 @@
 
-const themes = {
+const themes: any = {
     light: {
         primary: '#3f51b5',
         secondary: '#b0bec5',

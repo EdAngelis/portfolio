@@ -9,26 +9,21 @@ import { JobsContainer } from "./jobs.style";
 import { CertsContainer } from "./certs.style";
 import { ProjectsContainer } from "./projects.style";
 import { LayoutContainer } from "./layout.style";
-import styles from "./layout.module.css";
 import "../i18n";
 
 export default function Home() {
-  const { theme, setTheme } = React.useContext(appContext);
-  const { i18n, t } = useTranslation();
-  const [animate, setAnimate] = React.useState(false);
+  const { theme } = React.useContext(appContext);
+  const { t } = useTranslation();
+  const [animate, setAnimate] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     setAnimate(true);
   }, [theme]);
 
-  const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    i18n.changeLanguage(event.target.value);
-  };
-
   return (
     <>
       <LayoutContainer
-        animate={animate}
+        active={animate}
         onAnimationEnd={() => setAnimate(false)}
       >
         <main className={`container ${animate ? "animate" : "animate"}`}>
