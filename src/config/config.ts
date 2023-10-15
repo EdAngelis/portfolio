@@ -13,7 +13,7 @@ const config = {
         domain: 'http://localhost:3000',
     } as IProps,
     production: {
-        domain: 'https://www.example.com',
+        domain: 'https://www.edangelis.com',
     } as IProps,
 }
 
