@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Roboto, Indie_Flower, Irish_Grover } from "next/font/google";
+import StyledComponentsRegistry from "./lib/registry";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -44,7 +45,7 @@ export default function RootLayout({
         ${display.variable} 
         ${title.variable}`}
       >
-        {children}
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   );
