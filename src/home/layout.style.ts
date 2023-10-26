@@ -2,7 +2,7 @@ import { HTMLAttributes } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 interface LayoutContainerProps extends HTMLAttributes<HTMLDivElement> {
-    active?: boolean;
+    active?: string;
 }
 
 const activeAnim = keyframes`
@@ -25,6 +25,6 @@ export const LayoutContainer = styled.div<LayoutContainerProps>`
         gap: 120px;
         animation-duration: 1s;
         animation-iteration-count: 1;
-        animation-name: ${(props) => (props.active ? activeAnim : null)};
+        animation-name: ${(props) => (props?.active === "true" ? activeAnim : null)};
     }
 `;

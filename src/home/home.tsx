@@ -14,17 +14,17 @@ import "../i18n";
 export default function Home() {
   const { theme } = React.useContext(appContext);
   const { t } = useTranslation();
-  const [animate, setAnimate] = React.useState<boolean>(false);
+  const [animate, setAnimate] = React.useState<string>("false");
 
   React.useEffect(() => {
-    setAnimate(true);
+    setAnimate("true");
   }, [theme]);
 
   return (
     <>
       <LayoutContainer
         active={animate}
-        onAnimationEnd={() => setAnimate(false)}
+        onAnimationEnd={() => setAnimate("false")}
       >
         <main className={`container ${animate ? "animate" : "animate"}`}>
           <HomeContainer theme={theme}>

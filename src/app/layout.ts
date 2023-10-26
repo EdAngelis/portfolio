@@ -17,11 +17,6 @@ const activeAnim = keyframes`
 `;
 
 export const PageLayout = styled.div<LayoutContainerProps>`
-.item{
-    width: 300px;
-    height: 300px;
-    background-color: blue;
-}
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -29,8 +24,8 @@ export const PageLayout = styled.div<LayoutContainerProps>`
         margin: 0 auto;
         gap: 120px;
         background-color: red;
-        /* animation-duration: 1s;
+        animation-duration: 1s;
         animation-iteration-count: 1;
-        animation-name: ${(props) => (props.active ? activeAnim : null)}; */
+        animation-name: ${(props) => (props.active ? activeAnim : null)};
     }
 `;
