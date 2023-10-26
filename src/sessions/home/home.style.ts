@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme  from '../assets/theme/theme';
+import theme  from '../../assets/theme/theme';
 
 export const HomeContainer = styled.div`
 img {
