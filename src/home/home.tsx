@@ -1,8 +1,10 @@
 "use client";
 
 import React from "react";
-import { appContext } from "@/context";
 import Image from "next/image";
+import { appContext } from "@/context";
+import Header from "../sessions/header/header";
+import Footer from "../sessions/footer/footer";
 import { useTranslation } from "react-i18next";
 import { HomeContainer } from "./home.style";
 import { JobsContainer } from "./jobs.style";
@@ -26,7 +28,8 @@ export default function Home() {
         active={animate}
         onAnimationEnd={() => setAnimate("false")}
       >
-        <main className={`container ${animate ? "animate" : "animate"}`}>
+        <Header />
+        <main className={`container`}>
           <HomeContainer theme={theme}>
             <section className="home" id="home">
               <div className="container-skills">
@@ -84,14 +87,6 @@ export default function Home() {
                 <div className="bar flutter-bar"></div>
               </div>
               <div className="personal-data">
-                <div className="avatar">
-                  <Image
-                    src={"/avatar.png"}
-                    width={300}
-                    height={300}
-                    alt="Ed Angelis"
-                  />
-                </div>
                 <h2>{t("FULLSTACK")}</h2>
                 <a>{t("DEGREE")}</a>
                 <div className="links">
@@ -221,6 +216,7 @@ export default function Home() {
             </section>
           </CertsContainer>
         </main>
+        <Footer />
       </LayoutContainer>
     </>
   );

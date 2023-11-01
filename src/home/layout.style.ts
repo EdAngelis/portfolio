@@ -1,5 +1,6 @@
 import { HTMLAttributes } from 'react';
 import styled, { keyframes } from 'styled-components';
+import theme from '../assets/theme/theme';
 
 interface LayoutContainerProps extends HTMLAttributes<HTMLDivElement> {
     active?: string;
@@ -20,9 +21,10 @@ export const LayoutContainer = styled.div<LayoutContainerProps>`
     .container {
         display: grid;
         grid-template-columns: 1fr;
-        max-width: 960px;
+        max-width: 1440px;
+        gap: 400px;
         margin: 0 auto;
-        gap: 120px;
+        background-color: ${theme.dark.background};
         animation-duration: 1s;
         animation-iteration-count: 1;
         animation-name: ${(props) => (props?.active === "true" ? activeAnim : null)};

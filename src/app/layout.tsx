@@ -1,24 +1,44 @@
 import React from "react";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Roboto, Indie_Flower, Irish_Grover } from "next/font/google";
+import {
+  Inter,
+  Roboto,
+  Indie_Flower,
+  Irish_Grover,
+  Roboto_Mono,
+} from "next/font/google";
+import localFont from "next/font/local";
 import StyledComponentsRegistry from "./lib/registry";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const neutral = Roboto({
+const neutral = Roboto_Mono({
   weight: "400", // if single weight, otherwise you use array like [400, 500, 700],
   style: "normal", // if single style, otherwise you use array like ['normal', 'italic']
   subsets: ["latin"],
   variable: "--font-neutral",
 });
 
-const title = Irish_Grover({
-  weight: "400", // if single weight, otherwise you use array like [400, 500, 700],
-  style: "normal", // if single style, otherwise you use array like ['normal', 'italic']
-  subsets: ["latin"],
-  variable: "--font-title",
+const title = localFont({
+  src: [
+    {
+      path: "../../public/fonts/SometypeMono-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/SometypeMono-SemiBold.ttf",
+      weight: "500",
+      style: "medium",
+    },
+    {
+      path: "../../public/fonts/SometypeMono-Bold.ttf",
+      weight: "700",
+      style: "bold",
+    },
+  ],
 });
 
 const display = Indie_Flower({
@@ -42,9 +62,10 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`
+        ${title.className}
         ${neutral.variable} 
         ${display.variable} 
-        ${title.variable}`}
+        `}
       >
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>

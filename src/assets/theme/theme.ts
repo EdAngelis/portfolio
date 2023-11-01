@@ -7,22 +7,27 @@ const themes: any = {
         error: '#b71c1c'
     },
     dark: {
-        primary: '#000000',
+        primary: '#131A2B',
         secondary: '#ffffff',
         accent: '#000000',
-        error: '#ffffff'
+        error: '#ffffff',
+        background: '#01091C',
+        font: '#E4EBF0',
+        backgroundWhiteTransparent: 'rgba(248, 250, 252, 0.1)',
     },
     bra: {
         primary: '#04BF00',
         secondary: '#ffffff',
         darkGray: '#0F0F0F',
-        error: '#ffffff'
+        error: '#ffffff',
+        background: '#01091C'
     },
     eua: {
         primary: '#BD0000',
         secondary: '#ffffff',
         darkGray: '#0F0F0F',
-        error: '#ffffff'
+        error: '#ffffff',
+        background: '#01091C'
     } 
     };
 

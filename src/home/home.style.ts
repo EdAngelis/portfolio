@@ -8,17 +8,25 @@ img {
 }
 
 .home {
-    display: flex;
-    flex-wrap: wrap-reverse;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 20px;
     margin-top: 50px;
+    background-image: url("objects.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .personal-data {
-    flex-grow: 1;
-    color: ${(props)=> theme[props.theme].primary};
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content max-content max-content;
+    color: ${theme.dark.font};
+    align-self: center;
+    justify-self: center;
+
+
 }
 
 .avatar {
@@ -26,10 +34,11 @@ img {
 }
 
 .personal-data h2 {
+    display: inline-block;
     font-size: 2.5em;
     margin: 0 0 10px 0;
     padding: 0;
-    font-family: var( --font-title);
+    font-family: var( --font-neutral);
 }
 
 .links {
@@ -44,18 +53,17 @@ img {
 
 .links a {
     text-decoration: none;
-    background-color: #ffffff;
-    color: #0a66c2;
-    border-radius: 5px;
+    background-color: ${theme.dark.backgroundWhiteTransparent};;
+    color: ${theme.dark.font};
+    border-radius: 20px;
     font-family: var( --font-neutral);
     padding: 10px 20px;
-    font-size: 1.2em;
-    border: 2px solid #0D7CFF;
+    font-size: 20px;
+    border: 2px solid ${theme.dark.font};
 }
 
 .links a:hover {
-    background-color: #0D7CFF;
-    color: #fff;
+    opacity: 0.7;
 }
 
 .links a + a {
@@ -68,8 +76,8 @@ img {
 }
 
 .links a + a:hover {
-    background-color: ${(props)=> theme[props.theme].primary};
-    color: #fff;
+    opacity: 0.7;
+
 }
 
 .container-skills{
@@ -95,15 +103,16 @@ img {
 }
 
 .technology p {
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: start;
+    height: 35px;
     margin: 0;
     padding: 0 0 10px 10px;
-    color: #0D7CFF;
+    color: ${theme.dark.font};
 }
 
 .flutter-bar {
-    background-color: ${(props)=> theme[props.theme].primary};
+    background-color: ${theme.dark.primary};
     grid-area: flutter-bar;
 }
 
@@ -116,7 +125,7 @@ img {
 }
 
 .angular-bar {
-    background-color: ${(props)=> theme[props.theme].primary};
+    background-color: ${theme.dark.primary};
     grid-area: angular-bar;
 }
 
@@ -163,50 +172,69 @@ img {
 
 
 .javascript-bar{
-    background: ${(props)=> theme[props.theme].primary};
+    background: ${theme.dark.primary};
     grid-area: javascript-bar;
 }
 .typescript-bar{
-    background: ${(props)=> theme[props.theme].primary};
+    background: ${theme.dark.primary};
     grid-area: typescript-bar;
 }
 .node-bar{
-    background: ${(props)=> theme[props.theme].primary};
+    background: ${theme.dark.primary};
     grid-area: node-bar;
 }
 .react-bar{
-    background: ${(props)=> theme[props.theme].primary};
+    background: ${theme.dark.primary};
     grid-area: react-bar;
 }
 .vue-bar{
-    background: ${(props)=> theme[props.theme].primary};
+    background: ${theme.dark.primary};
     grid-area: vue-bar;
 }
 .angular{
     grid-area: angular;
 }
 .mongoDb-bar{
-    background: ${(props)=> theme[props.theme].primary};
+    background: ${theme.dark.primary};
     grid-area: mongoDb-bar;
 }
 .mySql-bar{
-    background: ${(props)=> theme[props.theme].primary};
+    background: ${theme.dark.primary};
     grid-area: mySql-bar;
 }
 .aws-bar{
-    background: ${(props)=> theme[props.theme].primary};
+    background: ${theme.dark.primary};
     grid-area: aws-bar;
 }
 .docker-bar{
     grid-area: docker-bar;
-    background: ${(props)=> theme[props.theme].primary};
+    background: ${theme.dark.primary};
 }
 .git-bar{
-    background: ${(props)=> theme[props.theme].primary};
+    background: ${theme.dark.primary};
     grid-area: git-bar;
 }
 .github-bar{
-    background: ${(props)=> theme[props.theme].primary};
+    background: ${theme.dark.primary};
     grid-area: github-bar;
+}
+
+@media (max-width: 900px) {
+
+    .home {
+        flex-wrap: wrap-reverse;
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+    .personal-data {
+    display: flex;
+    flex-wrap: wrap;
+    color: ${theme.dark.font};
+    justify-content: center;
+    align-items: center;
+
+
+}
 }
 `;
