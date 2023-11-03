@@ -46,22 +46,22 @@ export default function Header() {
           <ul className="ul">
             <li className="li">
               <a className="a" href="#jobs-section">
-                {t("EXPERIENCES")}
+                {t("MENU.EXPERIENCES")}
               </a>
             </li>
             <li className="li">
               <a className="a" href="#certifications">
-                {t("CERTIFICATES")}
+                {t("MENU.CERTIFICATES")}
               </a>
             </li>
             <li className="li">
               <a className="a" href="#projects">
-                {t("PROJECTS")}
+                {t("MENU.PROJECTS")}
               </a>
             </li>
             <li className="li">
               <a className="a" href="#footer">
-                {t("CONTACT")}
+                {t("MENU.CONTACT")}
               </a>
             </li>
           </ul>

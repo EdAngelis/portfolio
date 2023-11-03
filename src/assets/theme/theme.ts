@@ -13,6 +13,7 @@ const themes: any = {
         error: '#ffffff',
         background: '#01091C',
         font: '#E4EBF0',
+        fontDark: '#A6ADB9',
         backgroundWhiteTransparent: 'rgba(248, 250, 252, 0.1)',
     },
     bra: {
@@ -23,7 +24,7 @@ const themes: any = {
         background: '#01091C'
     },
     eua: {
-        primary: '#BD0000',
+        primary: '#0D7CFF',
         secondary: '#ffffff',
         darkGray: '#0F0F0F',
         error: '#ffffff',

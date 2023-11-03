@@ -1,57 +1,89 @@
-import styled from 'styled-components';
+ import styled from 'styled-components';
 import theme from '../assets/theme/theme';
 
 export const JobsContainer = styled.div`
-.experiences {
+.experiences-container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     line-height: 1.5em;
-    background-color: ${(props)=> theme[props.theme].darkGray};
     padding: 80px 0;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    margin: 0 100px;
 
 }
 
 .jobs-section {
+    margin-top: 100px;
+}
+
+.top {
+    display: flex;
+    margin: 0 130px;
+    gap: 100px;
+    align-items: center;
+}
+
+.top p {
+    color: ${theme.dark.fontDark};
+    font-size: 1.2em;
+    font-weight: 400;
     margin: 0;
+
 }
 
 .jobs-section h1 {
-    text-align: center;
     font-family: var( --font-title);
-    color: #ffffff;
-    margin-top: 0px;
+    color: ${theme.dark.font};
     font-size: 2em;
+    
 
 }
 
-.job1{
+.time-line {
+    height: 14px;
+    background-color: ${(props)=> theme[props.theme].primary};
+    width: 100%;
+}
+
+.job {
     display: flex;
     flex-grow: 1;
-    font-weight: bold;
     flex-direction: column;
-    align-items: center;
-    color: #0D7CFF;
-}
-
-.job1-date {
-    border-bottom: 10px solid #0D7CFF;
-    width: 100%;
-}
-
-.job2 {
-    display: flex;
-    flex-grow: 2;
-    flex-direction: column;
-    align-items: center;
     font-weight: bold;
     color: ${(props)=> theme[props.theme].primary};
+    gap: 10px;
 }
 
-.job2-date {
-    border-bottom: 10px solid ${(props)=> theme[props.theme].primary};
-    width: 100%;
+.job2{
+    position: relative;
+    bottom: 15px;
+}
+
+.technologies{
+    color: ${theme.dark.fontDark};
+    margin-left: 30px;
+}
+
+.role {
+    color: ${(props)=> theme[props.theme].primary};
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 30px;
+}
+
+.company {
+    color: ${(props)=> theme[props.theme].primary};
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.date {
+    color: ${theme.dark.fontDark};
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 30px;
+
 }
 
 @media screen and ( max-width: 450px) {
@@ -63,12 +95,7 @@ export const JobsContainer = styled.div`
         align-items: flex-start;
     }
 
-    .job1-technologies, .job1-role, .job1-company {
-        margin: 0 0 0 10px;
-    }
-
-    
-    .job2-technologies, .job2-role, .job2-company {
+    .technologies, .role, .company {
         margin: 0 0 0 10px;
     }
 }

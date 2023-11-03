@@ -89,11 +89,11 @@ img {
     "angular-bar angular angular angular angular angular angular"
     "flutter-bar flutter-bar flutter flutter flutter flutter flutter"
     "vue-bar vue-bar vue vue vue vue vue"
-    "react-bar react-bar react-bar react-bar react react react"
+    "mongoDb-bar mongoDb-bar mongoDb-bar mongoDb-bar mongoDb mongoDb mongoDb"
     "typescript-bar typescript-bar typescript-bar typescript-bar typescript typescript typescript"
     "node-bar node-bar node-bar node-bar node-bar node node"
+    "react-bar react-bar react-bar react-bar react-bar react react"
     "javascript-bar javascript-bar javascript-bar javascript-bar javascript-bar javascript javascript"
-    "mongoDb-bar mongoDb-bar mongoDb-bar mongoDb-bar mongoDb-bar mongoDb mongoDb"
     "docker-bar docker-bar docker-bar docker-bar docker docker docker"
     "aws-bar aws-bar aws-bar aws-bar aws aws aws"
     "mySql-bar mySql-bar mySql-bar mySql mySql mySql mySql"
@@ -172,7 +172,8 @@ img {
 
 
 .javascript-bar{
-    background: ${theme.dark.primary};
+    background-color: ${(props)=> theme[props.theme].primary};
+
     grid-area: javascript-bar;
 }
 .typescript-bar{
@@ -180,11 +181,12 @@ img {
     grid-area: typescript-bar;
 }
 .node-bar{
-    background: ${theme.dark.primary};
+    background-color: ${(props)=> theme[props.theme].primary};
+
     grid-area: node-bar;
 }
 .react-bar{
-    background: ${theme.dark.primary};
+    background-color: ${(props)=> theme[props.theme].primary};
     grid-area: react-bar;
 }
 .vue-bar{

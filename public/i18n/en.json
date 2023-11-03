@@ -1,10 +1,17 @@
 {
-    "EXPERIENCES": "Experiences",
+    "MENU": {
+        "EXPERIENCES": "Experiences",
+        "PROJECTS": "Projects",
+        "CONTACT": "Contact",
+        "CERTIFICATES": "Certificates"
+    },
+    "EXPERIENCES": "Work Experiences",
     "PROJECTS": "Projects",
     "CONTACT": "Contact",
     "CERTIFICATES": "Certificates",
     "FULLSTACK": "Full Stack Developer",
     "DEGREE": "Bachelor`s Degree in Information Systems",
     "MARKETING-BUSINESS": "Marketing Business",
-    "IOT-PLATFORM": "IoT Platform"
+    "IOT-PLATFORM": "IoT Platform",
+    "JOBS-DESCRIPTION": "At Blanko, I worked as a Full Stack developer, building from scratch a platform for selling pre-fabricated advertisements using famous people images. At Evoy, I worked on an IoT device platform, managing more than 10 thousand devices and their assets, I had multiple responsibilities, from maintaining the infrastructure in Aws, to building new features in React and Node."
 }

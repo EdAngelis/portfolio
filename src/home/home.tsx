@@ -99,26 +99,32 @@ export default function Home() {
             </section>
           </HomeContainer>
           <JobsContainer theme={theme}>
-            <section className="jobs-section" id="jobs-section">
-              <h1>{t("EXPERIENCES")}</h1>
-              <div className="experiences">
-                <div className="job1">
-                  <span className="job1-date">{`08/2021 - ${t(
+            <div id="jobs-section"></div>
+            <section className="jobs-section">
+              <div className="top">
+                <h1>{t("EXPERIENCES")}</h1>
+                <p>{t("JOBS-DESCRIPTION")}</p>
+              </div>
+              <div className="experiences-container">
+                <div className="job1 job">
+                  <span className="date">{`08/2021 - ${t(
                     "MARKETING-BUSINESS"
                   )}`}</span>
-                  <span className="job1-company">Blanko</span>
-                  <span className="job1-role">{t("FULLSTACK")}</span>
-                  <span className="job1-technologies">
-                    node - MySql - NextJs - javascript
+                  <span className="time-line"></span>
+                  <span className="role">{t("FULLSTACK")}</span>
+                  <span className="company">Blanko</span>
+                  <span className="technologies">
+                    node - MySql - NextJs - javaScript/TypeScript
                   </span>
                 </div>
-                <div className="job2">
-                  <span className="job2-date">{`07/2022 - ${t(
+                <div className="job2 job">
+                  <span className="date">{`07/2022 - ${t(
                     "IOT-PLATFORM"
                   )}`}</span>
-                  <span className="job2-company">Manusis4</span>
-                  <span className="job2-role">{t("FULLSTACK")}</span>
-                  <span className="job2-technologies">
+                  <span className="time-line"></span>
+                  <span className="role">{t("FULLSTACK")}</span>
+                  <span className="company">Manusis4</span>
+                  <span className="technologies">
                     node - mongoDb - React/Angular - javascript/Typescript
                   </span>
                 </div>

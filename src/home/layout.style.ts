@@ -22,7 +22,7 @@ export const LayoutContainer = styled.div<LayoutContainerProps>`
         display: grid;
         grid-template-columns: 1fr;
         max-width: 1440px;
-        gap: 400px;
+        gap: 100px;
         margin: 0 auto;
         background-color: ${theme.dark.background};
         animation-duration: 1s;
