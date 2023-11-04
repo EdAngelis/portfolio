@@ -10,7 +10,7 @@ interface IConfig {
 
 const config = {
     development: {
-        domain: 'http://localhost:3000',
+        domain: 'http://localhost:3001',
     } as IProps,
     production: {
         domain: 'https://www.edangelis.com',

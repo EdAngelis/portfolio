@@ -48,9 +48,9 @@ export const Container = styled.div`
         animation-timing-function: linear;
     }
 
-    .slider:hover {
+    /* .slider:hover {
         animation-play-state: paused;
-    }
+    } */
     .item{
         flex-grow: 1;
         flex-shrink: 0;
