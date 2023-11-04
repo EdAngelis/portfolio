@@ -2,16 +2,10 @@ import styled from 'styled-components';
 import theme from '@/assets/theme/theme';
 
 export const CertsContainer = styled.div`
-background-color: ${(props)=> theme[props.theme].darkGray};
-padding: 70px 50px;
-h1 {
-    color: #ffffff;
-}
+padding: 200px 0;
+
 .certifications{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    margin-top: 50px;
 }
 
 .img {

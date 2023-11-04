@@ -5,13 +5,16 @@ import Image from "next/image";
 import { appContext } from "@/context";
 import Header from "../sessions/header/header";
 import Footer from "../sessions/footer/footer";
+import { HomeContainer } from "../styles/home.style";
+import { JobsContainer } from "../styles/jobs.style";
+import { CertsContainer } from "../styles/certs.style";
+import { ProjectsContainer } from "../styles/projects.style";
+import { LayoutContainer } from "../styles/layout.style";
 import { useTranslation } from "react-i18next";
-import { HomeContainer } from "./home.style";
-import { JobsContainer } from "./jobs.style";
-import { CertsContainer } from "./certs.style";
-import { ProjectsContainer } from "./projects.style";
-import { LayoutContainer } from "./layout.style";
 import "../i18n";
+import ProjectCard from "@/components/project-card/project-card";
+import { projectList } from "./projects-list";
+import InfiniteSlider from "@/components/infinite-slider/infinite-slider";
 
 export default function Home() {
   const { theme } = React.useContext(appContext);
@@ -132,92 +135,115 @@ export default function Home() {
             </section>
           </JobsContainer>
           <ProjectsContainer theme={theme}>
-            <section className="projects" id="projects">
-              <h1>{t("PROJECTS")}</h1>
-              <a href="https://play.google.com/store/apps/details?id=com.rfgames.PlayLinguageVocabulary&pli=1">
-                Unity Game - Play Language - Apps on Google Play
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.deasolucoes.orange_painel">
-                Flutter app - FoodTech - Apps on Google Play
-              </a>
-              <a href="https://my-home-front.vercel.app/">
-                Web App - Envio de lista de compra
-              </a>
+            <div id="projects"></div>
+            <section className="projects">
+              <div className="top">
+                <h1>{t("PROJECTS")}</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit laboriosam unde ipsa commodi necessitatibus ab, minima
+                  deserunt id similique temporibus quis illo veritatis at vero
+                  quaerat labore magni perspiciatis optio!
+                </p>
+              </div>
+              <div className="cards">
+                {projectList.map((project, index) => (
+                  <ProjectCard
+                    key={index}
+                    title={t(project.title)}
+                    description={t(project.description)}
+                    technologies={project.technologies}
+                    theme={theme}
+                    image={project.image}
+                    webRepo={project.webRepo}
+                    apiRepo={project.apiRepo}
+                    appRepo={project.appRepo}
+                    figmaUrl={project.figmaUrl}
+                    liveLink={project.liveLink}
+                    data={project.data}
+                  />
+                ))}
+              </div>
             </section>
           </ProjectsContainer>
           <CertsContainer theme={theme}>
+            <div id="certifications"></div>
             <section className="certifications" id="certifications">
-              <div>
-                <Image
-                  className="img"
-                  src={"/ai.png"}
-                  alt="Ai Certification"
-                  width={100}
-                  height={100}
-                />
-              </div>
-              <Image
-                className="img"
-                src={"/big-data.png"}
-                alt="big-data Certification"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="img"
-                src={"/ciencia-de-dados.png"}
-                alt="science data"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="img"
-                src={"/docker.png"}
-                alt="docker Certification"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="img"
-                src={"/english.png"}
-                alt="english Certification"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="img"
-                src={"/flexbox.png"}
-                alt="flexbox Certification"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="img"
-                src={"/grid-layout.png"}
-                alt="grid layout Certification"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="img"
-                src={"/lambda.png"}
-                alt="lambda Certification"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="img"
-                src={"/python.png"}
-                alt="python Certification"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="img"
-                src={"/typescript.png"}
-                alt="typescript Certification"
-                width={100}
-                height={100}
+              <InfiniteSlider
+                items={[
+                  <Image
+                    key={"/big-data.png"}
+                    className="img"
+                    src={"/big-data.png"}
+                    alt="big-data Certification"
+                    width={400}
+                    height={300}
+                  />,
+                  <Image
+                    className="img"
+                    key={"/ciencia-de-dados.png"}
+                    src={"/ciencia-de-dados.png"}
+                    alt="science data"
+                    width={400}
+                    height={300}
+                  />,
+                  <Image
+                    className="img"
+                    key={"/docker.png"}
+                    src={"/docker.png"}
+                    alt="docker Certification"
+                    width={400}
+                    height={300}
+                  />,
+                  <Image
+                    className="img"
+                    key={"/english.png"}
+                    src={"/english.png"}
+                    alt="english Certification"
+                    width={400}
+                    height={300}
+                  />,
+                  <Image
+                    className="img"
+                    key={"/flexbox.png"}
+                    src={"/flexbox.png"}
+                    alt="flexbox Certification"
+                    width={400}
+                    height={300}
+                  />,
+                  <Image
+                    className="img"
+                    key={"/grid-layout.png"}
+                    src={"/grid-layout.png"}
+                    alt="grid layout Certification"
+                    width={400}
+                    height={300}
+                  />,
+                  <Image
+                    className="img"
+                    key={"/lambda.png"}
+                    src={"/lambda.png"}
+                    alt="lambda Certification"
+                    width={400}
+                    height={300}
+                  />,
+                  <Image
+                    className="img"
+                    key={"/python.png"}
+                    src={"/python.png"}
+                    alt="python Certification"
+                    width={400}
+                    height={300}
+                  />,
+                  <Image
+                    className="img"
+                    key={"/typescript.png"}
+                    src={"/typescript.png"}
+                    alt="typescript Certification"
+                    width={400}
+                    height={300}
+                  />,
+                ]}
               />
             </section>
           </CertsContainer>

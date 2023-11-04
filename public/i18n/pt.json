@@ -5,6 +5,26 @@
         "CONTACT": "Contato",
         "CERTIFICATES": "Certificações"
     },
+    "PROJECT-CARD": {
+        "WEB-LINK": "Confira o Código da Web",
+        "API-LINK": "Confira o Código da Api",
+        "APP-LINK": "Confira o Código do App",
+        "FIGMA-LINK": "Confira o Figma Design", 
+        "LIVE-LINK": "Teste online",
+        "MY-SHOPPING-LIST": {
+            "TITLE": "Minha Lista",
+            "DESCRIPTION": "Web app para organizar suas compras e enviar via Whatsapp"
+            
+        },
+        "PLAYLINGO": {
+            "TITLE": "PlayLingo",
+            "DESCRIPTION": "Jogo Educativo em Unity para aprender inglês"
+        },
+        "FOODTECH": {
+            "TITLE": "FOODTECH",
+            "DESCRIPTION": "Sistema de Restaurant com Cardápio Digital e Pedidos Online"
+        }
+    },
     "EXPERIENCES": "Experiências de Trabalho",
     "PROJECTS": "Projetos",
     "CONTACT": "Contato",

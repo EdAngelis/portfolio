@@ -1,5 +1,23 @@
+interface ICores {
+    primary?: string;
+    secondary?: string;
+    accent?: string;
+    error?: string;
+    background?: string;
+    font?: string;
+    darkGray?: string;
+    fontDark?: string;
+    backgroundWhiteTransparent?: string;
+}
+interface ITheme {
+    light: ICores;
+    dark: ICores;
+    bra: ICores;
+    eua: ICores;
 
-const themes: any = {
+}
+
+const themes: ITheme = {
     light: {
         primary: '#3f51b5',
         secondary: '#b0bec5',
