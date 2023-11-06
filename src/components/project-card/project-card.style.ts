@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 import theme from '../../assets/theme/theme';
 
-export const Container = styled.div`
+interface IProjectCard {
+    theme: string;
+
+}
+
+export const Container = styled.div<IProjectCard>`
     padding-top: 70px;
     overflow-y: hidden;
     .container {
