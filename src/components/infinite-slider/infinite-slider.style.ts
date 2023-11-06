@@ -13,9 +13,10 @@ export const Container = styled.div`
     
     .container{
         position: relative;
-        gap: 120px;
+        gap: 60px;
         width: 100%;
         display: flex;
+        flex-wrap: nowrap;
         max-width: 1440px;
         overflow: hidden;
         padding: 100px 0;
@@ -25,7 +26,7 @@ export const Container = styled.div`
     .container::after{
         content: '';
         width: 100px;
-        height: 300px;
+        height: 250px;
         position: absolute;
         z-index: 2;
     }
@@ -41,9 +42,9 @@ export const Container = styled.div`
 
     .slider{
         display: flex;
-        gap: 120px;
+        gap: 60px;
         animation-name: ${slide};
-        animation-duration: 40s;
+        animation-duration: 30s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
@@ -54,5 +55,9 @@ export const Container = styled.div`
     .item{
         flex-grow: 1;
         flex-shrink: 0;
+    }
+
+    .img{
+        border-radius: 20px;
     }
 `;

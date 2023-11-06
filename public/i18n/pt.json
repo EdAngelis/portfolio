@@ -3,8 +3,20 @@
         "EXPERIENCES": "Experiências",
         "PROJECTS": "Projetos",
         "CONTACT": "Contato",
-        "CERTIFICATES": "Certificações"
+        "CERTIFICATES": "Certificações",
+        "ABOUT-ME": "Sobre Mim"
     },
+    
+    "EXPERIENCES": "Experiências de Trabalho",
+    "PROJECTS": "Projetos",
+    "CONTACT": "Contato",
+    "CERTIFICATES": "Certificações",	
+    "ABOUT-ME": "SOBRE MIM",
+    "FULLSTACK": "Desenvolvedor Full Stack",
+    "DEGREE": "Bacharel Sistema da Informação",
+    "MARKETING-BUSINESS": "Marketing e Negócios",
+    "IOT-PLATFORM": "IoT Plataforma",
+    "JOBS-DESCRIPTION": "Na Blanko, atuei na construção de uma plataforma para venda de propagandas pré-fabricados utilizando a imagem de pessoas famosas, pude participar de todos os processos na criação. Na Manusis4, atuava numa plataforma de dispositivos IoTs, gerenciando mais de 10 mil devices e seus ativos, tinha múltiplas responsabilidades, desde a manutenção da infra na Aws, até a construção de novas features na plataforma em Angular e em React.",
     "PROJECT-CARD": {
         "WEB-LINK": "Confira o Código da Web",
         "API-LINK": "Confira o Código da Api",
@@ -25,14 +37,13 @@
             "DESCRIPTION": "Sistema de Restaurant com Cardápio Digital e Pedidos Online"
         }
     },
-    "EXPERIENCES": "Experiências de Trabalho",
-    "PROJECTS": "Projetos",
-    "CONTACT": "Contato",
-    "CERTIFICATES": "Certificações",	
-    "FULLSTACK": "Desenvolvedor Full Stack",
-    "DEGREE": "Bacharel Sistema da Informação",
-    "MARKETING-BUSINESS": "Marketing e Negócios",
-    "IOT-PLATFORM": "IoT Plataforma",
-    "JOBS-DESCRIPTION": "Na Blanko, atuei na construção de uma plataforma para venda de propagandas pré-fabricados utilizando a imagem de pessoas famosas, pude participar de todos os processos na criação. Na Manusis4, atuava numa plataforma de dispositivos IoTs, gerenciando mais de 10 mil devices e seus ativos, tinha múltiplas responsabilidades, desde a manutenção da infra na Aws, até a construção de novas features na plataforma em Angular e em React."
-    
+    "ABOUT-SECTION":{
+        "TITLE": "Olá, Sou Ed Angelis R Rieiro, Brasileiro 23/12/1984.\nSeja bem-vindo ao meu portfólio.",
+        "DESCRIPTION": {
+            "P1": "Apaixonado por tecnologia desde sempre, fui apresentado ao desenvolvimento após ingressar no curso de Sistema de Informação em 08/2017, desde então programo e estudo praticamente todos os dias da minha vida, e sorrindo continuarei fazendo assim para o resto dela.",
+            "P2": "Muito curioso, já criei jogos em Unity, Apps em Flutter já passei até alguns meses debruçado sobre machine learning, mas meu foco é frameworks JavaScripts para desenvolvimento Web e Mobile com React, React-Native e Node js.",
+            "P3": "Quando não estou codando, estudando ou me exercitando, gosto de algumas atividades bem diversas, como mergulhar de cilindro, Jogar Poker, Jogar Beach Tennis, fato interessante sobre mim é que em algum momento da minha vida já ganhei a vida como jogador de poker profissional e em outro momento como instrutor de mergulho. Gosto bastante também do básico, escutar música, assistir filmes, jogar games, ler alguma coisa pra relaxar antes de dormir.",
+            "P4": "Me vejo daqui a 10 anos, trabalhando em algum projeto de impacto mundial com milhões de usuários, codando sempre, mas liderando alguma equipe de desenvolvimento, fora das telas me vejo cuidando de algum jardim, de alguns gatos, e vendo meus filhos crescerem com saúde"
+        }
+    }
 }

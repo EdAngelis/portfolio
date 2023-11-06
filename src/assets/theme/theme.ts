@@ -9,7 +9,7 @@ interface ICores {
     fontDark?: string;
     backgroundWhiteTransparent?: string;
 }
-interface ITheme {
+export interface ITheme {
     light: ICores;
     dark: ICores;
     bra: ICores;
@@ -17,7 +17,7 @@ interface ITheme {
 
 }
 
-const themes: ITheme = {
+const themes: any = {
     light: {
         primary: '#3f51b5',
         secondary: '#b0bec5',

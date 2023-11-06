@@ -1,20 +1,22 @@
 "use client";
-
+import "../i18n";
 import React from "react";
 import Image from "next/image";
 import { appContext } from "@/context";
+import { useTranslation } from "react-i18next";
+import { projectList } from "./projects-list";
 import Header from "../sessions/header/header";
 import Footer from "../sessions/footer/footer";
-import { HomeContainer } from "../styles/home.style";
-import { JobsContainer } from "../styles/jobs.style";
-import { CertsContainer } from "../styles/certs.style";
-import { ProjectsContainer } from "../styles/projects.style";
-import { LayoutContainer } from "../styles/layout.style";
-import { useTranslation } from "react-i18next";
-import "../i18n";
 import ProjectCard from "@/components/project-card/project-card";
-import { projectList } from "./projects-list";
 import InfiniteSlider from "@/components/infinite-slider/infinite-slider";
+import {
+  HomeContainer,
+  JobsContainer,
+  CertsContainer,
+  ProjectsContainer,
+  LayoutContainer,
+  AboutMe,
+} from "../styles";
 
 export default function Home() {
   const { theme } = React.useContext(appContext);
@@ -169,84 +171,30 @@ export default function Home() {
           <CertsContainer theme={theme}>
             <div id="certifications"></div>
             <section className="certifications" id="certifications">
-              <InfiniteSlider
-                items={[
-                  <Image
-                    key={"/big-data.png"}
-                    className="img"
-                    src={"/big-data.png"}
-                    alt="big-data Certification"
-                    width={350}
-                    height={250}
-                  />,
-                  <Image
-                    className="img"
-                    key={"/ciencia-de-dados.png"}
-                    src={"/ciencia-de-dados.png"}
-                    alt="science data"
-                    width={350}
-                    height={250}
-                  />,
-                  <Image
-                    className="img"
-                    key={"/docker.png"}
-                    src={"/docker.png"}
-                    alt="docker Certification"
-                    width={350}
-                    height={250}
-                  />,
-                  <Image
-                    className="img"
-                    key={"/english.png"}
-                    src={"/english.png"}
-                    alt="english Certification"
-                    width={350}
-                    height={250}
-                  />,
-                  <Image
-                    className="img"
-                    key={"/flexbox.png"}
-                    src={"/flexbox.png"}
-                    alt="flexbox Certification"
-                    width={350}
-                    height={250}
-                  />,
-                  <Image
-                    className="img"
-                    key={"/grid-layout.png"}
-                    src={"/grid-layout.png"}
-                    alt="grid layout Certification"
-                    width={350}
-                    height={250}
-                  />,
-                  <Image
-                    className="img"
-                    key={"/lambda.png"}
-                    src={"/lambda.png"}
-                    alt="lambda Certification"
-                    width={350}
-                    height={250}
-                  />,
-                  <Image
-                    className="img"
-                    key={"/python.png"}
-                    src={"/python.png"}
-                    alt="python Certification"
-                    width={350}
-                    height={250}
-                  />,
-                  <Image
-                    className="img"
-                    key={"/typescript.png"}
-                    src={"/typescript.png"}
-                    alt="typescript Certification"
-                    width={350}
-                    height={250}
-                  />,
-                ]}
-              />
+              <InfiniteSlider />
             </section>
           </CertsContainer>
+          <AboutMe theme={theme}>
+            <div id="about-me"></div>
+            <section className="about-me">
+              <div className="picture">
+                <Image
+                  src={"/avatar.png"}
+                  alt="avatar"
+                  width={300}
+                  height={300}
+                />
+              </div>
+              <div className="text">
+                <h1>{t("ABOUT-ME")}</h1>
+                <h2 className="title">{t("ABOUT-SECTION.TITLE")}</h2>
+                <p>{t("ABOUT-SECTION.DESCRIPTION.P1")}</p>
+                <p>{t("ABOUT-SECTION.DESCRIPTION.P2")}</p>
+                <p>{t("ABOUT-SECTION.DESCRIPTION.P3")}</p>
+                <p>{t("ABOUT-SECTION.DESCRIPTION.P4")}</p>
+              </div>
+            </section>
+          </AboutMe>
         </main>
         <Footer />
       </LayoutContainer>
