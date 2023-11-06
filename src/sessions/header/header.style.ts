@@ -8,6 +8,8 @@ export const HeaderContainer = styled.div`
     justify-content: space-between;
     box-shadow: 0px -5px 10px #ffffff;
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .ul {

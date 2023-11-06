@@ -3,6 +3,8 @@ import theme from '../../assets/theme/theme';
 
 export const FooterContainer = styled.div`
 margin-top: 100px;
+max-width: 1440px;
+margin: 0 auto;
 footer h2{
     text-align: center;
     font-family: var( --font-neutral);
