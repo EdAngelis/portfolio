@@ -34,7 +34,7 @@ export const AboutMe = styled.div`
     text-align: justify;
 }
 
-@media (max-width: 900px){
+@media (max-width: 600px){
     .about-me{
         margin: 0 10px;
         flex-direction: column;

@@ -30,7 +30,7 @@ export const LayoutContainer = styled.div<LayoutContainerProps>`
         animation-name: ${(props) => (props?.active === "true" ? activeAnim : null)};
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 600px) {
         .layout-container {
             gap: 10px;
         }

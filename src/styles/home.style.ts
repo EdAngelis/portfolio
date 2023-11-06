@@ -222,7 +222,7 @@ img {
     grid-area: github-bar;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
 
     .home {
     flex-wrap: wrap-reverse;
