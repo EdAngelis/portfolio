@@ -44,7 +44,7 @@ export const Container = styled.div`
     .title {
         font-size: 1.5rem;
         font-weight: 600;
-        color: ${(props) => theme[props.theme].primary};
+        color: ${(props) => theme[props.theme as string].primary};
         font-weight: bold;
     }
 
