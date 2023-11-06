@@ -7,7 +7,7 @@ export interface IProjectCard {
     appRepo?: string;
     figmaUrl?: string;
     liveLink?: string;
-    theme: string;
+    theme: any;
     image: string;
     data: string;
   }
