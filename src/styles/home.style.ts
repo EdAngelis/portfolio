@@ -12,10 +12,10 @@ img {
     grid-template-columns: max-content 1fr;
     gap: 20px;
     margin-top: 50px;
-    /* background-image: url("objects.svg");
+    background-image: url("objects.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right; */
+    background-position: right;
 }
 
 .personal-data {
@@ -248,6 +248,9 @@ img {
     .personal-data span {
         font-size: 1.5em;
         max-width: 300px;
+    }
+    .home {
+        background-image: none;
     }
 }
 `;
