@@ -45,8 +45,8 @@ export const Container = styled.div`
         font-size: 1.5rem;
         font-weight: 600;
         color: ${(props) => {
-            const index = props.theme as string;
-            return theme[index].primary
+            type ObjectIndex = keyof typeof theme;
+            return theme[props.theme as ObjectIndex].primary
             }};
         font-weight: bold;
     }
