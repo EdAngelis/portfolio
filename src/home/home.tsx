@@ -92,13 +92,15 @@ export default function Home() {
                 <div className="bar flutter-bar"></div>
               </div>
               <div className="personal-data">
-                <h2>{t("FULLSTACK")}</h2>
-                <span>{t("DEGREE")}</span>
-                <div className="links">
-                  <a href="https://www.linkedin.com/in/ed-angelis-ribeiro-2797b57a/">
-                    LINKEDIN
-                  </a>
-                  <a href="https://github.com/EdAngelis">GITHUB</a>
+                <div className="data">
+                  <h2>{t("FULLSTACK")}</h2>
+                  <span>{t("DEGREE")}</span>
+                  <div className="links">
+                    <a href="https://www.linkedin.com/in/ed-angelis-ribeiro-2797b57a/">
+                      LINKEDIN
+                    </a>
+                    <a href="https://github.com/EdAngelis">GITHUB</a>
+                  </div>
                 </div>
               </div>
             </section>

@@ -79,7 +79,7 @@ export const Container = styled.div<IProjectCard>`
         color: ${theme.dark.fontDark};
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
         .container{
             width: 250px;
             height: 300px;

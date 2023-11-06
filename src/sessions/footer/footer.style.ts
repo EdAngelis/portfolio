@@ -5,11 +5,12 @@ export const FooterContainer = styled.div`
 margin-top: 100px;
 max-width: 1440px;
 margin: 0 auto;
+padding-bottom: 50px;
 footer h2{
     text-align: center;
     font-family: var( --font-neutral);
     border-top: 2px solid ${(props)=> theme[props.theme].primary};
-    padding: 5px 0 0 0;
+    padding: 50px 0 0 0;
     color: ${(props)=> theme[props.theme].primary};
 }
 

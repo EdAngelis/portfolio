@@ -20,7 +20,7 @@ export const JobsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin: 0 130px;
-    gap: 100px;
+    gap: 50px;
     align-items: center;
 }
 
@@ -95,7 +95,7 @@ export const JobsContainer = styled.div`
 }
 
 .top{
-    margin: 0 10px;
+    margin: 0 10px 50px 10px;
     text-align: center;
     justify-content: center;
     gap: 20px;

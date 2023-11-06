@@ -4,13 +4,17 @@ import themes from "@/assets/theme/theme";
 export const AboutMe = styled.div`
 .about-me{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     gap: 100px;
     margin: 100px 130px;
 }
 .picture{
-    
+    flex-grow: 1;
+}
+
+.text {
+    flex-grow: 1;
 }
 
 .text h1 {
@@ -34,7 +38,15 @@ export const AboutMe = styled.div`
     text-align: justify;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1100px){
+    .about-me{
+        margin: 0 10px;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 900px){
     .about-me{
         margin: 0 10px;
         flex-direction: column;
