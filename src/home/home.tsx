@@ -34,7 +34,7 @@ export default function Home() {
         onAnimationEnd={() => setAnimate("false")}
       >
         <Header />
-        <main className={`container`}>
+        <main className={`layout-container`}>
           <HomeContainer theme={theme}>
             <section className="home" id="home">
               <div className="container-skills">
@@ -93,7 +93,7 @@ export default function Home() {
               </div>
               <div className="personal-data">
                 <h2>{t("FULLSTACK")}</h2>
-                <a>{t("DEGREE")}</a>
+                <span>{t("DEGREE")}</span>
                 <div className="links">
                   <a href="https://www.linkedin.com/in/ed-angelis-ribeiro-2797b57a/">
                     LINKEDIN
@@ -170,7 +170,7 @@ export default function Home() {
           </ProjectsContainer>
           <CertsContainer theme={theme}>
             <div id="certifications"></div>
-            <section className="certifications" id="certifications">
+            <section className="certifications">
               <InfiniteSlider />
             </section>
           </CertsContainer>

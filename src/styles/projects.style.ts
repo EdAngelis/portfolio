@@ -16,6 +16,7 @@ export const ProjectsContainer = styles.div`
 
 .top {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 130px;
     gap: 100px;
     align-items: center;
@@ -55,4 +56,17 @@ h1 {
     gap: 50px;
 }
 
+@media (max-width: 900px) {
+
+    .projects {
+        margin-top: 50px;
+    }
+    .top {
+         margin: 0 10px;
+         text-align: center;
+         justify-content: center;
+         gap: 20px;
+        
+    }
+}
 `;

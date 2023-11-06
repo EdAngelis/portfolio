@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import theme from '../../assets/theme/theme';
-import { KeyObject } from 'crypto';
 
 export const HeaderContainer = styled.div`
 .header {
@@ -10,6 +9,7 @@ export const HeaderContainer = styled.div`
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 ;
 }
 
 .ul {
@@ -51,7 +51,6 @@ export const HeaderContainer = styled.div`
     .header {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
     }
     .h1 {
         margin: 0;

@@ -18,7 +18,7 @@ const activeAnim = keyframes`
 `;
 
 export const LayoutContainer = styled.div<LayoutContainerProps>`
-    .container {
+    .layout-container {
         display: grid;
         grid-template-columns: 1fr;
         max-width: 1440px;
@@ -28,5 +28,11 @@ export const LayoutContainer = styled.div<LayoutContainerProps>`
         animation-duration: 1s;
         animation-iteration-count: 1;
         animation-name: ${(props) => (props?.active === "true" ? activeAnim : null)};
+    }
+
+    @media (max-width: 900px) {
+        .layout-container {
+            gap: 10px;
+        }
     }
 `;

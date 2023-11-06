@@ -12,10 +12,10 @@ img {
     grid-template-columns: max-content 1fr;
     gap: 20px;
     margin-top: 50px;
-    background-image: url("objects.svg");
+    /* background-image: url("objects.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right; */
 }
 
 .personal-data {
@@ -47,8 +47,9 @@ img {
     margin: 30px 0 50px 0;
 }
 
-.personal-data a {
-    font-size: 1.5em;
+.personal-data span {
+    font-size: 2.5em;
+    text-align: center;
 }
 
 .links a {
@@ -224,19 +225,29 @@ img {
 @media (max-width: 900px) {
 
     .home {
-        flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
     display: flex;
     gap: 20px;
     margin-top: 50px;
 }
     .personal-data {
     display: flex;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     color: ${theme.dark.font};
     justify-content: center;
     align-items: center;
-
-
+    margin: 0 auto;
 }
+    .personal-data h2 {
+        font-size: 2em;
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .personal-data span {
+        font-size: 1.5em;
+        max-width: 300px;
+    }
 }
 `;

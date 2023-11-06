@@ -18,6 +18,7 @@ export const JobsContainer = styled.div`
 
 .top {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 130px;
     gap: 100px;
     align-items: center;
@@ -86,7 +87,19 @@ export const JobsContainer = styled.div`
 
 }
 
-@media screen and ( max-width: 450px) {
+@media screen and ( max-width: 900px) {
+    .experiences-container {
+        margin: 0 10px;
+        gap: 50px;
+        padding: 0;
+}
+
+.top{
+    margin: 0 10px;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
     .job1 {
         align-items: flex-start;
     }
@@ -98,5 +111,7 @@ export const JobsContainer = styled.div`
     .technologies, .role, .company {
         margin: 0 0 0 10px;
     }
+
+    
 }
 `;

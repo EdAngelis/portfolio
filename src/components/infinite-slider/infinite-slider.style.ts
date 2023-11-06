@@ -14,10 +14,7 @@ export const Container = styled.div`
     .container{
         position: relative;
         gap: 60px;
-        width: 100%;
         display: flex;
-        flex-wrap: nowrap;
-        max-width: 1440px;
         overflow: hidden;
         padding: 100px 0;
     }
@@ -52,12 +49,24 @@ export const Container = styled.div`
     /* .slider:hover {
         animation-play-state: paused;
     } */
-    .item{
-        flex-grow: 1;
-        flex-shrink: 0;
-    }
 
     .img{
         border-radius: 20px;
+    }
+
+    @media (max-width: 768px){
+        .slider{
+
+            animation-duration: 50s;
+        }
+
+        .container::before,
+    .container::after{
+        content: '';
+        width: 50px;
+        height: 250px;
+        position: absolute;
+        z-index: 2;
+    }
     }
 `;

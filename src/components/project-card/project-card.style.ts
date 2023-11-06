@@ -78,4 +78,12 @@ export const Container = styled.div<IProjectCard>`
         font-weight: 200;
         color: ${theme.dark.fontDark};
     }
+
+    @media (max-width: 900px) {
+        .container{
+            width: 250px;
+            height: 300px;
+            
+        }
+    }
 `;
