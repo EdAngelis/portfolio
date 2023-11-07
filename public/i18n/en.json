@@ -8,7 +8,8 @@
     },
     
     "EXPERIENCES": "Work Experiences",
-    "PROJECTS": "Projects",
+    "PROJECTS": "Meet My Projects",
+    "PROJECTS-DESCRIPTION": "I did some unusual projects, like a game in Unity, a System and Online menu using Vue and Flutter, but I'm focused on React/Next, React-Native and Node Js, until Deno take his place. ",
     "CONTACT": "Contact",
     "CERTIFICATES": "Certificates",
     "ABOUT-ME": "ABOUT ME",
@@ -40,9 +41,8 @@
         "TITLE": "Hello! I`m Ed Angelis R Ribeiro Brazilian, 12/23/1984 \nWelcome to my portfolio",
         "DESCRIPTION": {
             "P1": "I have always been passionate about technology, I was introduced to development after joining the Information Systems course in 08/2017, since then I have been programming and studying practically every day of my life, and smiling I will continue doing this for the rest of it.",
-            "P2": "Very curious, I've created games in Unity, Apps in Flutter, I've even spent a few months focusing on machine learning, but my focus is JavaScript frameworks for Web and Mobile development with React, React-Native and Node js.",
-            "P3": "When I'm not coding, studying or exercising, I enjoy some very diverse activities, such as scuba diving, playing poker, playing beach-tennis, an interesting fact about me is that at some point in my life I have already worded as a professional poker player. and at another time as a diving instructor. In addition to these activities, I like the basics, listening to music, watching movies, playing games, reading something to relax before bed.",
-            "P4": "I see myself in 10 years, working on some project with a global impact with millions of users, always coding, but leading a development team, beyond work I see myself taking care of a garden, some cats, and watching my children grow up healthy."
+            "P2": "When I'm not coding, studying or exercising, I enjoy some very diverse activities, such as scuba diving, playing poker, playing beach-tennis, an interesting fact about me is that at some point in my life I have already worded as a professional poker player. and at another time as a diving instructor. In addition to these activities, I like the basics, listening to music, watching movies, playing games, reading something to relax before bed.",
+            "P3": "I see myself in 10 years working on some project with a global impact with millions of users, always coding, but also leading a development team, beyond work I see myself taking care of a garden, some cats, and watching my children grow up."
         }
     }
 }

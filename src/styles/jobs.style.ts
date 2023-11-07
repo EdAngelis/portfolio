@@ -20,7 +20,6 @@ export const JobsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin: 0 130px;
-    gap: 50px;
     align-items: center;
 }
 

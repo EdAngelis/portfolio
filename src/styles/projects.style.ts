@@ -18,7 +18,6 @@ export const ProjectsContainer = styles.div`
     display: flex;
     flex-wrap: wrap;
     margin: 0 130px;
-    gap: 30px;
     align-items: center;
 }
 

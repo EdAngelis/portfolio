@@ -8,7 +8,8 @@
     },
     
     "EXPERIENCES": "Experiências de Trabalho",
-    "PROJECTS": "Projetos",
+    "PROJECTS": "Conheça meus Projetos",
+    "PROJECTS-DESCRIPTION": "Apesar de alguns projetos inusitados no começo da carreira, como alguns jogos em Unity e um Sistema para Restaurante em Vue e Flutter, hoje estou focado em continuar me aperfeiçoando em React/Next, React-Native, e o velho companheiro Node, enquanto o Deno não tomar o lugar.",
     "CONTACT": "Contato",
     "CERTIFICATES": "Certificações",	
     "ABOUT-ME": "SOBRE MIM",
@@ -41,9 +42,8 @@
         "TITLE": "Olá, Sou Ed Angelis R Rieiro, Brasileiro 23/12/1984.\nSeja bem-vindo ao meu portfólio.",
         "DESCRIPTION": {
             "P1": "Apaixonado por tecnologia desde sempre, fui apresentado ao desenvolvimento após ingressar no curso de Sistema de Informação em 08/2017, desde então programo e estudo praticamente todos os dias da minha vida, e sorrindo continuarei fazendo assim para o resto dela.",
-            "P2": "Muito curioso, já criei jogos em Unity, Apps em Flutter já passei até alguns meses debruçado sobre machine learning, mas meu foco é frameworks JavaScripts para desenvolvimento Web e Mobile com React, React-Native e Node js.",
-            "P3": "Quando não estou codando, estudando ou me exercitando, gosto de algumas atividades bem diversas, como mergulhar de cilindro, Jogar Poker, Jogar Beach Tennis, fato interessante sobre mim é que em algum momento da minha vida já ganhei a vida como jogador de poker profissional e em outro momento como instrutor de mergulho. Gosto bastante também do básico, escutar música, assistir filmes, jogar games, ler alguma coisa pra relaxar antes de dormir.",
-            "P4": "Me vejo daqui a 10 anos, trabalhando em algum projeto de impacto mundial com milhões de usuários, codando sempre, mas liderando alguma equipe de desenvolvimento, fora das telas me vejo cuidando de algum jardim, de alguns gatos, e vendo meus filhos crescerem com saúde"
+            "P2": "Quando não estou codando, estudando ou me exercitando, gosto de algumas atividades bem diversas, como mergulhar de cilindro, Jogar Poker, Jogar Beach Tennis, fato interessante sobre mim é que em algum momento da minha vida já ganhei a vida como jogador de poker profissional e em outro momento como instrutor de mergulho. Além dessas atividades mais inusitadas, gosto bastante também do básico, escutar música, assistir filmes, jogar games, ler alguma coisa pra relaxar antes de dormir.",
+            "P3": "Me vejo daqui a 10 anos trabalhando em algum projeto de impacto mundial com milhões de usuários, codando sempre, mas também liderando alguma equipe de desenvolvimento, fora das telas me vejo cuidando de algum jardim, de alguns gatos, e vendo meus filhos crescerem."
         }
     }
 }

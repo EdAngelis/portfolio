@@ -143,12 +143,7 @@ export default function Home() {
             <section className="projects">
               <div className="top">
                 <h1>{t("PROJECTS")}</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit laboriosam unde ipsa commodi necessitatibus ab, minima
-                  deserunt id similique temporibus quis illo veritatis at vero
-                  quaerat labore magni perspiciatis optio!
-                </p>
+                <p>{t("PROJECTS-DESCRIPTION")}</p>
               </div>
               <div className="cards">
                 {projectList.map((project, index) => (
@@ -193,7 +188,6 @@ export default function Home() {
                 <p>{t("ABOUT-SECTION.DESCRIPTION.P1")}</p>
                 <p>{t("ABOUT-SECTION.DESCRIPTION.P2")}</p>
                 <p>{t("ABOUT-SECTION.DESCRIPTION.P3")}</p>
-                <p>{t("ABOUT-SECTION.DESCRIPTION.P4")}</p>
               </div>
             </section>
           </AboutMe>
