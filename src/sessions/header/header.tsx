@@ -36,8 +36,7 @@ export default function Header() {
           <Image
             className="image"
             src={flag === "bra" ? "/brasil.png" : "/eua-flag.png"}
-            width={40}
-            height={50}
+            fill={true}
             alt="brasil-flag"
             image-fit="contain"
           />

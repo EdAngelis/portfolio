@@ -22,37 +22,47 @@ export default function ProjectCard({
   return (
     <Container theme={theme}>
       <div className="container">
-        <Image fill={true} src={image} alt={title} />
+        <div className="img-cover">
+          <Image className="image" fill={true} src={image} alt={title} />
+        </div>
         <div className="card">
           <div className="card-content">
-            <span className="title">
-              {title}
-              <span className="data">{data}</span>
-            </span>
+            <span className="data">{data}</span>
+            <span className="title">{title}</span>
             <span className="description">{description}</span>
             <span className="technologies">{technologies}</span>
             {webRepo && (
               <span className="links">
-                <a href={webRepo}>{t("PROJECT-CARD.WEB-LINK")}</a>
+                <a className="a" href={webRepo}>
+                  {t("PROJECT-CARD.WEB-LINK")}
+                </a>
               </span>
             )}
             {apiRepo && (
               <span className="links">
-                <a href={webRepo}>{t("PROJECT-CARD.API-LINK")}</a>
+                <a className="a" href={webRepo}>
+                  {t("PROJECT-CARD.API-LINK")}
+                </a>
               </span>
             )}
             {appRepo && (
               <span className="links">
-                <a href={webRepo}>{t("PROJECT-CARD.APP-LINK")}</a>
+                <a className="a" href={webRepo}>
+                  {t("PROJECT-CARD.APP-LINK")}
+                </a>
               </span>
             )}
             {figmaUrl && (
               <span className="links">
-                <a href={webRepo}>{t("PROJECT-CARD.FIGMA-LINK")}</a>
+                <a className="a" href={webRepo}>
+                  {t("PROJECT-CARD.FIGMA-LINK")}
+                </a>
               </span>
             )}
             <span className="links">
-              <a href={liveLink}>{t("PROJECT-CARD.LIVE-LINK")}</a>
+              <a className="a" href={liveLink}>
+                {t("PROJECT-CARD.LIVE-LINK")}
+              </a>
             </span>
           </div>
         </div>

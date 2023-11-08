@@ -175,12 +175,7 @@ export default function Home() {
             <div id="about-me"></div>
             <section className="about-me">
               <div className="picture">
-                <Image
-                  src={"/avatar.png"}
-                  alt="avatar"
-                  width={300}
-                  height={300}
-                />
+                <Image src={"/avatar.png"} alt="avatar" fill={true} />
               </div>
               <div className="text">
                 <h1>{t("ABOUT-ME")}</h1>

@@ -12,7 +12,6 @@ img {
     flex-wrap: wrap-reverse;
     /* grid-template-columns: max-content 1fr; */
     gap: 20px;
-    margin-top: 50px;
     background-image: url("objects.svg");
     background-size: contain;
     background-repeat: no-repeat;

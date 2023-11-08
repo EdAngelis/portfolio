@@ -4,7 +4,7 @@ export const projectList: IProjectCard[] = [
     {
         title: "PROJECT-CARD.MY-SHOPPING-LIST.TITLE",
         description: "PROJECT-CARD.MY-SHOPPING-LIST.DESCRIPTION",
-        technologies: "React/Node/Mongo/Aws",
+        technologies: "React Node Mongo Aws",
         webRepo: "https://github.com/EdAngelis/my-home-front",
         apiRepo: "https://github.com/EdAngelis/my-home-api",
         appRepo: "",
@@ -18,7 +18,7 @@ export const projectList: IProjectCard[] = [
     {
         title: "PROJECT-CARD.PLAYLINGO.TITLE",
         description: "PROJECT-CARD.PLAYLINGO.DESCRIPTION",
-        technologies: "C#/Unity/Node/Mongo/Aws",
+        technologies: "C# Unity Node Mongo Aws",
         webRepo: "",
         apiRepo: "",
         appRepo: "https://github.com/EdAngelis/playlingo",
@@ -31,7 +31,7 @@ export const projectList: IProjectCard[] = [
     {
         title: "PROJECT-CARD.FOODTECH.TITLE",
         description: "PROJECT-CARD.FOODTECH.DESCRIPTION",
-        technologies: "Vue/Flutter/Node/Mongo/Aws",
+        technologies: "Vue Flutter Node Mongo Aws",
         webRepo: "https://github.com/EdAngelis/menu",
         apiRepo: "https://github.com/EdAngelis/rest-system-node",
         appRepo: "https://github.com/EdAngelis/rest_sys_app",

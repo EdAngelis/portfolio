@@ -41,7 +41,7 @@ export const Container = styled.div`
         display: flex;
         gap: 60px;
         animation-name: ${slide};
-        animation-duration: 30s;
+        animation-duration: 100s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
@@ -57,7 +57,7 @@ export const Container = styled.div`
     @media (max-width: 768px){
         .slider{
 
-            animation-duration: 50s;
+            animation-duration: 70s;
         }
 
         .container::before,

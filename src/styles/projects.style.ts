@@ -33,21 +33,6 @@ h1 {
     font-size: 2em;
 }
 
-.projects a {
-    align-self: flex-start;
-    margin: 0 0 0 0;
-    line-height: 2em;
-    color: #0D7CFF;
-}
-
-.projects a:hover {
-    color: ${(props)=> theme[props.theme].primary};
-}
-
-.projects a + a {
-    margin-top: 0px;
-}
-
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +50,10 @@ h1 {
          text-align: center;
          justify-content: center;
          gap: 20px;
-        
+    }
+
+    .top p {
+        text-align: justify;
     }
 }
 `;

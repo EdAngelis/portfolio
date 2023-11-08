@@ -10,7 +10,11 @@ export const AboutMe = styled.div`
     margin: 100px 130px;
 }
 .picture{
+    position: relative;
     flex-grow: 1;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
 }
 
 .text {

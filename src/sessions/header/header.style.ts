@@ -74,35 +74,13 @@ export const HeaderContainer = styled.div`
 
 .language {
     position: relative;
-    width: 50px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
     border-radius: 10px;
     cursor: pointer;
     overflow: hidden;
     animation: flag-kick 1.5s infinite;
     
-}
-
-@keyframes flag {
-    0% {
-        transform: translateX(20px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes flag-2 {
-    0% {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
 }
 
 @keyframes flag-kick {
@@ -115,19 +93,6 @@ export const HeaderContainer = styled.div`
     100% {
         transform: translateY(0px);
     }
-}
-
-.bra {
-    transform: translateX(20px);
-}
-
-.eua {
-    transform: translateY(20px);
-}
-
-.image {
-    width: 100%;
-    height: 100%;
 }
 `;
 

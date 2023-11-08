@@ -9,6 +9,7 @@ export const JobsContainer = styled.div`
     line-height: 1.5em;
     padding: 80px 0;
     margin: 0 100px;
+    gap: 50px 0;
 
 }
 
@@ -98,6 +99,10 @@ export const JobsContainer = styled.div`
     text-align: center;
     justify-content: center;
     gap: 20px;
+}
+
+.top p {
+    text-align: justify;
 }
     .job1 {
         align-items: flex-start;
