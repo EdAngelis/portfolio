@@ -26,8 +26,19 @@ img {
     align-content: center;
 }
 
+.typewriter-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.type-writer{
+    display: inline;
+    background-color: red;
+}
+
 .data {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     color: ${theme.dark.font};
 }
@@ -254,4 +265,10 @@ img {
         align-items: center;
     }
 }
+
+/* @media (max-width: 950px) {
+        .data {
+           flex-basis: 500px;
+        }
+    } */
 `;

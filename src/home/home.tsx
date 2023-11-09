@@ -9,6 +9,7 @@ import Header from "../sessions/header/header";
 import Footer from "../sessions/footer/footer";
 import ProjectCard from "@/components/project-card/project-card";
 import InfiniteSlider from "@/components/infinite-slider/infinite-slider";
+import Typewriter from "@/components/typing/typing";
 import {
   HomeContainer,
   JobsContainer,
@@ -100,6 +101,26 @@ export default function Home() {
                       LINKEDIN
                     </a>
                     <a href="https://github.com/EdAngelis">GITHUB</a>
+                  </div>
+                  <div className="typewriter-wrapper">
+                    <Typewriter
+                      text={[
+                        {
+                          typeText: "Readability",
+                          static: "CLEAN CODE",
+                        },
+                        {
+                          typeText: "Testability",
+                          static: "CLEAN CODE",
+                        },
+                        {
+                          typeText: "Self-documentation",
+                          static: "CLEAN CODE",
+                        },
+                      ]}
+                      delay={200}
+                      infinite={true}
+                    />
                   </div>
                 </div>
               </div>
