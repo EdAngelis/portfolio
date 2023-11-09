@@ -22,8 +22,8 @@ img {
     display: flex;
     flex-grow: 1;
     justify-content: center;
-    align-items: center;
     align-content: center;
+    margin-top: 100px;
 }
 
 .typewriter-wrapper {
@@ -241,6 +241,11 @@ img {
     gap: 20px;
     margin-top: 50px;
 }
+
+    .personal-data{
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
     .data {
     display: flex;
     flex-wrap: wrap;
