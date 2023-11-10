@@ -1,5 +1,11 @@
- import styled from 'styled-components';
+ import styled, {keyframes} from 'styled-components';
 import theme from '../assets/theme/theme';
+
+const animate = keyframes`
+    0% { transform: translateY(-200px); }
+    100% { transform: translateY(0px); }
+
+`;
 
 export const JobsContainer = styled.div`
 .experiences-container {
@@ -7,10 +13,8 @@ export const JobsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     line-height: 1.5em;
-    padding: 80px 0;
     margin: 0 100px;
     gap: 50px 0;
-
 }
 
 .jobs-section {
@@ -20,7 +24,7 @@ export const JobsContainer = styled.div`
 .top {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 130px;
+    margin: 50px 130px;
     align-items: center;
 }
 
@@ -29,15 +33,12 @@ export const JobsContainer = styled.div`
     font-size: 1.2em;
     font-weight: 400;
     margin: 0;
-
 }
 
 .jobs-section h1 {
     font-family: var( --font-title);
     color: ${theme.dark.font};
     font-size: 2em;
-    
-
 }
 
 .time-line {

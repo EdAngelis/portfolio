@@ -45,5 +45,19 @@
             "P2": "Quando não estou codando, estudando ou me exercitando, gosto de algumas atividades bem diversas, como mergulhar de cilindro, Jogar Poker, Jogar Beach Tennis, fato interessante sobre mim é que em algum momento da minha vida já ganhei a vida como jogador de poker profissional e em outro momento como instrutor de mergulho. Além dessas atividades mais inusitadas, gosto bastante também do básico, escutar música, assistir filmes, jogar games, ler alguma coisa pra relaxar antes de dormir.",
             "P3": "Me vejo daqui a 10 anos trabalhando em algum projeto de impacto mundial com milhões de usuários, codando sempre, mas também liderando alguma equipe de desenvolvimento, fora das telas me vejo cuidando de algum jardim, de alguns gatos, e vendo meus filhos crescerem."
         }
+    },
+    "TYPING":{
+        "AGILE": "AGILE",
+        "SCRUM": "SCRUM",
+        "CLEAN-CODE": "CLEAN CODE",
+        "TEXT": {
+            "1": "Fácil Leitura",
+            "2": "Testabilidade",
+            "3": "Auto-documentação",
+            "4": "Pessoas acima de Processos",
+            "5": "Funcionalidade acima de extensiva documentação",
+            "6": "Colaboração acima de Negociação",
+            "7": "Resposta a mudança rapidamente"
+        }
     }
 }

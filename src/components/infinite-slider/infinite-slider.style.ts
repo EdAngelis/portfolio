@@ -16,7 +16,6 @@ export const Container = styled.div`
         gap: 60px;
         display: flex;
         overflow: hidden;
-        padding: 100px 0;
     }
 
     .container::before,

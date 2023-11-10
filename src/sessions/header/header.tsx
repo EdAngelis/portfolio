@@ -59,6 +59,11 @@ export default function Header() {
               </a>
             </li>
             <li className="li">
+              <a className="a" href="#about-me">
+                {t("MENU.ABOUT-ME")}
+              </a>
+            </li>
+            <li className="li">
               <a className="a" href="#footer">
                 {t("MENU.CONTACT")}
               </a>

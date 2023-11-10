@@ -20,6 +20,11 @@ export default function Typewriter({ text, delay, infinite }: TypewriterProps) {
   const [currentWord, setCurrentWord] = useState(0);
 
   useEffect(() => {
+    setCurrentIndex(0);
+    setCurrentText([]);
+  }, [theme]);
+
+  useEffect(() => {
     let timeout: NodeJS.Timeout;
 
     if (currentIndex <= text[currentWord].typeText.length) {
@@ -45,7 +50,7 @@ export default function Typewriter({ text, delay, infinite }: TypewriterProps) {
       <span className="char">
         {text[currentWord].static}:
         {currentText.map((char, index) => (
-          <p key={index}>{char === " " ? "." : char}</p>
+          <p key={index}>{char === " " ? <>&emsp;</> : char}</p>
         ))}
       </span>
     </TypingContainer>

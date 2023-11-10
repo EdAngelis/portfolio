@@ -22,7 +22,7 @@ export const LayoutContainer = styled.div<LayoutContainerProps>`
         display: grid;
         grid-template-columns: 1fr;
         max-width: 1440px;
-        gap: 100px;
+        gap: 150px;
         margin: 0 auto;
         background-color: ${theme.dark.background};
         animation-duration: 1s;
@@ -30,9 +30,14 @@ export const LayoutContainer = styled.div<LayoutContainerProps>`
         animation-name: ${(props) => (props?.active === "true" ? activeAnim : null)};
     }
 
+    .animate {
+        transform: translateY(-200px);
+        transition: transform 0.8s ease-in-out;
+    }
+
     @media (max-width: 900px) {
         .layout-container {
-            gap: 10px;
+            gap: 100px;
         }
     }
 `;

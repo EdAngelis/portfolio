@@ -9,7 +9,6 @@ export const ProjectsContainer = styles.div`
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    margin-top: 100px;
     font-family: var( --font-title);
     color: #ffffff;
 }
@@ -42,9 +41,6 @@ h1 {
 
 @media (max-width: 900px) {
 
-    .projects {
-        margin-top: 50px;
-    }
     .top {
          margin: 0 10px;
          text-align: center;

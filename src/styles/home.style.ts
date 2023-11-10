@@ -1,22 +1,42 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import theme  from '../assets/theme/theme';
 
+const blinking = keyframes`
+    0% {
+        opacity: 0.2;
+        }
+    50% {
+         opacity: 0.8;
+    }    
+   100% {
+       opacity: 0.2;
+       }
+       `;
 export const HomeContainer = styled.div`
-img {
-	display: block;
-	max-width: 100%;
-}
-
-.home {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    /* grid-template-columns: max-content 1fr; */
-    gap: 20px;
-    background-image: url("objects.svg");
+position: relative;
+.background {
+    position: absolute;
+    background-image: url("objects.svg") ;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+
+    animation-name: ${blinking};
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
+.home {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+    z-index: 2;
+}
+
 
 .personal-data {
     display: flex;
@@ -41,6 +61,7 @@ img {
     flex-wrap: wrap;
     flex-direction: column;
     color: ${theme.dark.font};
+    max-width: 550px;
 }
 
 .avatar {
@@ -251,6 +272,7 @@ img {
     flex-wrap: wrap;
     color: ${theme.dark.font};
     text-align: center;
+    
 }
     .data h2 {
         font-size: 2em;
