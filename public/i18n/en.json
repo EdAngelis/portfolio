@@ -9,7 +9,7 @@
     
     "EXPERIENCES": "Work Experiences",
     "PROJECTS": "Meet My Projects",
-    "PROJECTS-DESCRIPTION": "I did some unusual projects, like a game in Unity, a restaurant system with a online menu using Vue and Flutter, but I'm focused on React/Next, React-Native and Node Js, until Deno take his place. ",
+    "PROJECTS-DESCRIPTION": "I did some unusual projects, like a game in Unity, a restaurant system with a online menu using Vue and Flutter, but I'm focused on React/Next, React-Native and Node Js. ",
     "CONTACT": "Contact",
     "CERTIFICATES": "Certificates",
     "ABOUT-ME": "ABOUT ME",
@@ -35,6 +35,14 @@
         "FOODTECH": {
             "TITLE": "FOODTECH",
             "DESCRIPTION": "Restaurant System with Live Menu"
+        },
+        "PSYCHOLOGIST": {
+            "TITLE": "PSYCHOLOGIST WEBSITE",
+            "DESCRIPTION": "Landing Page"
+        },
+        "DRAWMORETAG": {
+            "TITLE": "Admin Panel",
+            "DESCRIPTION": ""
         }
     },
     "ABOUT-SECTION":{

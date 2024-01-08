@@ -9,7 +9,7 @@
     
     "EXPERIENCES": "Experiências de Trabalho",
     "PROJECTS": "Conheça meus Projetos",
-    "PROJECTS-DESCRIPTION": "Apesar de alguns projetos inusitados no começo da carreira, como alguns jogos em Unity e um Sistema para Restaurante em Vue e Flutter, hoje estou focado em continuar me aperfeiçoando em React/Next, React-Native, e o velho companheiro Node, enquanto o Deno não tomar o lugar.",
+    "PROJECTS-DESCRIPTION": "Apesar de alguns projetos inusitados no começo da carreira, como alguns jogos em Unity e um Sistema para Restaurante em Vue e Flutter, hoje estou focado em continuar me aperfeiçoando em React/Next, React-Native, e o velho companheiro Node.",
     "CONTACT": "Contato",
     "CERTIFICATES": "Certificações",	
     "ABOUT-ME": "SOBRE MIM",
@@ -36,6 +36,14 @@
         "FOODTECH": {
             "TITLE": "FOODTECH",
             "DESCRIPTION": "Sistema de Restaurant com Cardápio Digital e Pedidos Online"
+        },
+        "PSYCHOLOGIST": {
+            "TITLE": "Psicologo Online",
+            "DESCRIPTION": "Landing Page"
+        },
+        "DRAWMORETAG": {
+            "TITLE": "Painel Administrativo",
+            "DESCRIPTION": ""
         }
     },
     "ABOUT-SECTION":{

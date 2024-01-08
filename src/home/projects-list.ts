@@ -2,6 +2,20 @@ import { IProjectCard } from "../types/project-card.type";
 
 export const projectList: IProjectCard[] = [
     {
+        title: "PROJECT-CARD.PSYCHOLOGIST.TITLE",
+        description: "PROJECT-CARD.PSYCHOLOGIST.DESCRIPTION",
+        technologies: "React Next TypeScript Css Html",
+        webRepo: "",
+        apiRepo: "",
+        appRepo: "",
+        figmaUrl: "",
+        liveLink: "https://psychologist-landing-page.vercel.app/",
+        theme: "",
+        image: "/landing-page.png",
+        data: "06/2023",
+
+    },
+    {
         title: "PROJECT-CARD.MY-SHOPPING-LIST.TITLE",
         description: "PROJECT-CARD.MY-SHOPPING-LIST.DESCRIPTION",
         technologies: "React Node Mongo Aws",
@@ -39,6 +53,19 @@ export const projectList: IProjectCard[] = [
         liveLink: "https://play.google.com/store/apps/details?id=com.deasolucoes.orange_painel",
         theme: "",
         image: "/foodtech.jpg",
+        data: "01/2019",
+    },
+    {
+        title: "PROJECT-CARD.DRAWMORETAG.TITLE",
+        description: "PROJECT-CARD.DRAWMORETAG.DESCRIPTION",
+        technologies: "Next Node Mongo",
+        webRepo: "",
+        apiRepo: "",
+        appRepo: "",
+        figmaUrl: "",
+        liveLink: "https://draw-more-tags-client.vercel.app/",
+        theme: "",
+        image: "/drawmoretag.png",
         data: "01/2019",
     },
 
