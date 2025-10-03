@@ -32,6 +32,14 @@
             "TITLE": "PlayLingo",
             "DESCRIPTION": "educational Unity Game to learn English"
         },
+        "RACKETS-UP": {
+            "TITLE": "Rackets Up",
+            "DESCRIPTION": "Racket Sports App"
+        },
+        "EXAM-AI": {
+            "TITLE": "Exam AI",
+            "DESCRIPTION": "AI-powered exam preparation platform"
+        },
         "FOODTECH": {
             "TITLE": "FOODTECH",
             "DESCRIPTION": "Restaurant System with Live Menu"
@@ -48,9 +56,9 @@
     "ABOUT-SECTION":{
         "TITLE": "Hello! I`m Ed Angelis R Ribeiro Brazilian, 12/23/1984 \nWelcome to my portfolio",
         "DESCRIPTION": {
-            "P1": "I have always been passionate about technology, I was introduced to development after joining the Information Systems course in 08/2017, since then I have been programming and studying practically every day of my life, and smiling I will continue doing this for the rest of it.",
-            "P2": "When I'm not coding, studying or exercising, I enjoy some very diverse activities, such as scuba diving, playing poker, playing beach-tennis, an interesting fact about me is that at some point in my life I have already worded as a professional poker player. and at another time as a diving instructor. In addition to these activities, I like the basics, listening to music, watching movies, playing games, reading something to relax before bed.",
-            "P3": "I see myself in 10 years working on some project with a global impact with millions of users, always coding, but also leading a development team, beyond work I see myself taking care of a garden, some cats, and watching my children grow up."
+            "P1": "I have always been passionate about technology. My journey into development began in August 2017, when I started my Bachelor’s Degree in Information Systems. Since then, I’ve been programming and learning almost every day — and with a smile, I can say this is something I’ll keep doing for the rest of my life.",
+            "P2": "When I’m not coding, studying, or exercising, I enjoy a wide range of activities: scuba diving, playing poker, and tennis. I also appreciate the simple things, — listening to music, watching movies, playing games, or reading something.",
+            "P3": "Looking ahead, I see myself in ten years working on projects with a global impact, reaching millions of users. I hope to still be coding daily, but also leading and inspiring a development team. Beyond my career, I picture myself tending to a garden, caring for cats, and watching my children grow up."
         }
     },
     "TYPING":{

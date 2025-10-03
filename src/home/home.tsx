@@ -6,9 +6,11 @@ import { InView } from "react-intersection-observer";
 import { appContext } from "@/context";
 import { useTranslation } from "react-i18next";
 import { projectList } from "./projects-list";
+import { jobExperiences } from "./job-experiences-list";
 import Header from "../sessions/header/header";
 import Footer from "../sessions/footer/footer";
 import ProjectCard from "@/components/project-card/project-card";
+import JobExperience from "@/components/job-experience/job-experience";
 import InfiniteSlider from "@/components/infinite-slider/infinite-slider";
 import Typewriter from "@/components/typing/typing";
 import {
@@ -50,8 +52,12 @@ export default function Home() {
                 <div className="technology node">
                   <p>node</p>
                 </div>
+
                 <div className="technology react">
                   <p>react</p>
+                </div>
+                <div className="technology react-native">
+                  <p>react-native</p>
                 </div>
                 <div className="technology vue">
                   <p>vue</p>
@@ -81,6 +87,7 @@ export default function Home() {
                   <p>flutter</p>
                 </div>
                 <div className="bar vue-bar"></div>
+                <div className="bar react-native-bar"></div>
                 <div className="bar react-bar"></div>
                 <div className="bar angular-bar"></div>
                 <div className="bar node-bar"></div>
@@ -157,28 +164,7 @@ export default function Home() {
                     <p>{t("JOBS-DESCRIPTION")}</p>
                   </div>
                   <div className="experiences-container">
-                    <div className="job1 job">
-                      <span className="date">{`08/2021 - ${t(
-                        "MARKETING-BUSINESS"
-                      )}`}</span>
-                      <span className="time-line"></span>
-                      <span className="role">{t("FULLSTACK")}</span>
-                      <span className="company">Blanko</span>
-                      <span className="technologies">
-                        node - MySql - NextJs - javaScript/TypeScript
-                      </span>
-                    </div>
-                    <div className="job2 job">
-                      <span className="date">{`07/2022 - ${t(
-                        "IOT-PLATFORM"
-                      )}`}</span>
-                      <span className="time-line"></span>
-                      <span className="role">{t("FULLSTACK")}</span>
-                      <span className="company">Manusis4</span>
-                      <span className="technologies">
-                        node - mongoDb - React/Angular - javascript/Typescript
-                      </span>
-                    </div>
+                    <JobExperience experiences={jobExperiences} theme={theme} />
                   </div>
                 </section>
               </JobsContainer>

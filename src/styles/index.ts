@@ -3,6 +3,15 @@ import { JobsContainer } from "./jobs.style";
 import { CertsContainer } from "./certs.style";
 import { ProjectsContainer } from "./projects.style";
 import { LayoutContainer } from "./layout.style";
+import { jobExperiences } from "@/home/job-experiences-list";
 import { AboutMe } from "./aboutme.style";
 
-export { HomeContainer, JobsContainer, CertsContainer, ProjectsContainer, LayoutContainer, AboutMe}
+export {
+  HomeContainer,
+  JobsContainer,
+  CertsContainer,
+  ProjectsContainer,
+  LayoutContainer,
+  AboutMe,
+  jobExperiences,
+};
