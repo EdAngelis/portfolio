@@ -1,26 +1,26 @@
-
 interface IProps {
-    domain: string
+  domain: string;
 }
 
 interface IConfig {
-    development: IProps
-    production: IProps
+  development: IProps;
+  production: IProps;
 }
 
 const config = {
-    development: {
-        domain: 'http://localhost:3000',
-    } as IProps,
-    production: {
-        domain: 'https://www.edangelis.com',
-    } as IProps,
-}
+  development: {
+    domain: "http://localhost:3000",
+  } as IProps,
+  production: {
+    domain: "https://personal-website-one-lac.vercel.app",
+  } as IProps,
+};
 
-type ObjectIndex = keyof typeof config
+type ObjectIndex = keyof typeof config;
 
-const environment: ObjectIndex = process.env.NEXT_PUBLIC_ENVIRONMENT as ObjectIndex || 'development'
+const environment: ObjectIndex =
+  (process.env.NEXT_PUBLIC_ENVIRONMENT as ObjectIndex) || "development";
 
-const env: IProps = config[environment] as IProps
+const env: IProps = config[environment] as IProps;
 
-export {env}
+export { env };
