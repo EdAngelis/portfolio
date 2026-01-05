@@ -2,14 +2,7 @@ import { JobExperience } from "@/types/job-experience.type";
 
 export const jobExperiences: JobExperience[] = [
   {
-    date: "08/2021",
-    field: "MARKETING-BUSINESS",
-    role: "FULLSTACK",
-    company: "Blanko",
-    technologies: "node - MySql - NextJs - javaScript/TypeScript",
-  },
-  {
-    date: "07/2022",
+    date: "08/2021 - 09/2023",
     field: "IOT-PLATFORM",
     role: "FULLSTACK",
     company: "Manusis4",

@@ -17,7 +17,7 @@
     "DEGREE": "Bachelor`s Degree in Information Systems",
     "MARKETING-BUSINESS": "Marketing Business",
     "IOT-PLATFORM": "IoT Platform",
-    "JOBS-DESCRIPTION": "At Blanko, I worked as a Full Stack developer, building from scratch a platform for selling pre-fabricated advertisements using famous people images. At Evoy, I worked on an IoT device platform, managing more than 10 thousand devices and their assets, I had multiple responsibilities, from maintaining the infrastructure in Aws, to building new features in React and Node.",
+    "JOBS-DESCRIPTION": "At Evoy, I worked on an IoT device platform, managing more than 10 thousand devices and their assets, I had multiple responsibilities, from maintaining the infrastructure in Aws, to building new features in React and Node.",
     "PROJECT-CARD": {
         "WEB-LINK": "Check out Web Code",
         "API-LINK": "Check out Api Code",
@@ -27,6 +27,10 @@
         "MY-SHOPPING-LIST": {
             "TITLE": "Shopping List",
             "DESCRIPTION": "Web app to organize and send shopping list via WhatsApp"
+        },
+        "LARA": {
+            "TITLE": "Lara",
+            "DESCRIPTION": "Literacy and visual stimulation, and learning in general, for people with low vision."
         },
         "PLAYLINGO": {
             "TITLE": "PlayLingo",

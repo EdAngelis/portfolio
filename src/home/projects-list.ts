@@ -2,6 +2,20 @@ import { IProjectCard } from "../types/project-card.type";
 
 export const projectList: IProjectCard[] = [
   {
+    title: "PROJECT-CARD.LARA.TITLE",
+    description: "PROJECT-CARD.LARA.DESCRIPTION",
+    technologies: "React-Native Node TypeScript MongoDB, Android, iOS",
+    webRepo: "",
+    apiRepo: "",
+    appRepo: "",
+    figmaUrl: "",
+    liveLink:
+      "https://play.google.com/store/apps/details?id=com.deangelis84.larafront",
+    theme: "",
+    image: "/lara.png",
+    data: "12/2025",
+  },
+  {
     title: "PROJECT-CARD.RACKETS-UP.TITLE",
     description: "PROJECT-CARD.RACKETS-UP.DESCRIPTION",
     technologies:
