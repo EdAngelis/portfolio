@@ -2,7 +2,14 @@ import { JobExperience } from "@/types/job-experience.type";
 
 export const jobExperiences: JobExperience[] = [
   {
-    date: "08/2021 - 09/2023",
+    date: "09/2020 - 06/2022",
+    field: "Marketing Business",
+    role: "FULLSTACK",
+    company: "Blanko",
+    technologies: "node - mongoDb - React/Angular - javascript/Typescript",
+  },
+  {
+    date: "08/2022 - 09/2024",
     field: "IOT-PLATFORM",
     role: "FULLSTACK",
     company: "Manusis4",
